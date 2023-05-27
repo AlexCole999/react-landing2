@@ -4,7 +4,19 @@ function FreshBakery() {
 
   return (
     <div className="FreshBakery">
-      FreshBakery
+
+      <div className="FreshBakery__title">
+        Fresh Bakery Every Day
+      </div>
+
+      <div className="FreshBakery__subtitle">
+        Sience 1984
+      </div>
+
+      <div className="FreshBakery__text">
+        Even the all-powerful Pointing has no control about the blind texts it is an almost.
+      </div>
+
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import './Nav.scss'
-import Logo from '../../assets/Logo.svg'
-import header from '../../assets/header-burgerButton.svg'
+import Logo from '../../assets/icons/Logo.svg'
+import header from '../../assets/icons/header-burgerButton.svg'
 
 function Nav() {
 
