@@ -1,3 +1,10 @@
 .Nav {
-  color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+
+  &__menu {
+    display: none;
+  }
+
 }
