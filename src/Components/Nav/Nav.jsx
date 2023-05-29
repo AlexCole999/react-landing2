@@ -1,13 +1,21 @@
 import './Nav.scss'
 import Logo from '../../assets/icons/Logo.svg'
 import header from '../../assets/icons/header-burgerButton.svg'
+import AnimationComponent from '../AnimationComponent/AnimationComponent'
 
 function Nav() {
 
   return (
     <div className='Nav'>
 
-      <img className='Nav__logo' src={Logo} alt="" />
+      <AnimationComponent
+        transition={2}
+        triggerOnce={true}
+        opacityAnimation={{ from: 0, to: 1 }}
+        moveAnimation={{ left: { from: -25, to: 0 } }}
+      >
+        <img className='Nav__logo' src={Logo} alt="" />
+      </AnimationComponent>
 
       <div className="Nav__menu">
         <div className="Nav__menuelem">About</div>
@@ -15,7 +23,14 @@ function Nav() {
         <div className="Nav__menuelem">Recipes</div>
       </div>
 
-      <img src={header} alt="" />
+      <AnimationComponent
+        transition={2}
+        triggerOnce={true}
+        opacityAnimation={{ from: 0, to: 1 }}
+        moveAnimation={{ right: { from: -25, to: 0 } }}
+      >
+        <img src={header} alt="" />
+      </AnimationComponent>
 
     </div>
   )
