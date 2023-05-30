@@ -1,14 +1,18 @@
 import './FreshBakery.scss'
 import mainImg from '../../assets/img/FreshBakery-img.jpg'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
-import { useEffect } from 'react';
+import { useState } from 'react';
+import LoadingComponent from '../LoadingComponent/LoadingComponent';
 
 function FreshBakery() {
 
+  const [loaded, setLoaded] = useState(false)
+
+  setTimeout(() => { setLoaded(true) }, 800)
 
   return (
 
-    <div className="FreshBakery">
+    loaded ? <div className="FreshBakery">
 
       {/* <div style={{ height: '1200px' }}></div> */}
 
@@ -59,7 +63,7 @@ function FreshBakery() {
       </AnimationComponent>
 
     </div >
-
+      : <LoadingComponent />
   )
 
 }
