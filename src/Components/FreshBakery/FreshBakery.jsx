@@ -8,7 +8,7 @@ function FreshBakery() {
 
   const [loaded, setLoaded] = useState(false)
 
-  setTimeout(() => { setLoaded(true) }, 800)
+  setTimeout(() => { setLoaded(true) }, 2500)
 
   return (
 
@@ -58,7 +58,7 @@ function FreshBakery() {
         <AnimationComponent
           transition={2}
           triggerOnce={true}
-          opacityAnimation={{ from: 0, to: 1 }}
+          opacityAnimation={{ from: 0.2, to: 1 }}
           blurAnimation={{ from: 10, to: 0 }}
         >
           <img src={mainImg} alt="" />
