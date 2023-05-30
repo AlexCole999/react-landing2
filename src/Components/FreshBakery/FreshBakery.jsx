@@ -1,5 +1,5 @@
 import './FreshBakery.scss'
-import mainImg from '../../assets/img/FreshBakery-img.jpg'
+import mainImg from '../../assets/img/FreshBakery-img.jpeg'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
 import { useState } from 'react';
 import LoadingComponent from '../LoadingComponent/LoadingComponent';
