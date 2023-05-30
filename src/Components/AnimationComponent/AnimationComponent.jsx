@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 export default function AnimationComponent(
   {
     children,
+    preloadComponent,
     delay,
     threshold,
     triggerOnce,
@@ -50,7 +51,11 @@ export default function AnimationComponent(
         ...blurAnimationStyles
       }}>
 
-      {children}
+      {
+        preloadComponent
+          ? (inView ? children : preloadComponent)
+          : children
+      }
 
     </div>
 
