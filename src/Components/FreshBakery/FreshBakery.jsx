@@ -32,7 +32,7 @@ function FreshBakery() {
         <div className="FreshBakery__text">
           Even the all-powerful Pointing has no control about the blind texts it is an almost.
         </div>
-      </AnimationComponent>
+      </AnimationComponent >
 
       <AnimationComponent
         moveAnimation={{ left: { from: -150, to: 0 } }}
@@ -49,11 +49,12 @@ function FreshBakery() {
         transition={2}
         triggerOnce={true}
         opacityAnimation={{ from: 0, to: 1 }}
+        blurAnimation={{ from: 10, to: 0 }}
       >
         <img src={mainImg} alt="" />
       </AnimationComponent>
 
-    </div>
+    </div >
 
   )
 

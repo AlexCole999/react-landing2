@@ -9,7 +9,8 @@ export default function AnimationComponent(
     triggerOnce,
     transition,
     moveAnimation,
-    opacityAnimation
+    opacityAnimation,
+    blurAnimation
   }) {
 
   const { ref, inView } = useInView({
@@ -18,18 +19,35 @@ export default function AnimationComponent(
     triggerOnce: triggerOnce == true ? triggerOnce : false
   });
 
+  const transitionStyles = {
+    transition: `${transition}s all ease-out`
+  }
+
+  const moveAnimationStyles = {
+    left: moveAnimation?.left ? (inView ? `${moveAnimation?.left?.to}px` : `${moveAnimation?.left?.from}px`) : null,
+    right: moveAnimation?.right ? (inView ? `${moveAnimation?.right?.to}px` : `${moveAnimation?.right?.from}px`) : null,
+    top: moveAnimation?.top ? (inView ? `${moveAnimation?.top?.to}px` : `${moveAnimation?.top?.from}px`) : null,
+    bottom: moveAnimation?.bottom ? (inView ? `${moveAnimation?.bottom?.to}px` : `${moveAnimation?.bottom?.from}px`) : null
+  }
+
+  const opacityAnimationStyles = {
+    opacity: opacityAnimation ? (inView ? `${opacityAnimation?.to}` : `${opacityAnimation?.from}`) : null
+  }
+
+  const blurAnimationStyles = {
+    filter: blurAnimation ? (inView ? `blur(${blurAnimation.to}px)` : `blur(${blurAnimation.from}px)`) : null
+  }
+
   return (
 
     <div
       ref={ref}
       style={{
-        transition: `${transition}s all ease-out`,
         position: "relative",
-        left: moveAnimation?.left ? (inView ? `${moveAnimation?.left?.to}px` : `${moveAnimation?.left?.from}px`) : null,
-        right: moveAnimation?.right ? (inView ? `${moveAnimation?.right?.to}px` : `${moveAnimation?.right?.from}px`) : null,
-        top: moveAnimation?.top ? (inView ? `${moveAnimation?.top?.to}px` : `${moveAnimation?.top?.from}px`) : null,
-        bottom: moveAnimation?.bottom ? (inView ? `${moveAnimation?.bottom?.to}px` : `${moveAnimation?.bottom?.from}px`) : null,
-        opacity: opacityAnimation ? (inView ? `${opacityAnimation?.to}` : `${opacityAnimation?.from}`) : null,
+        ...transitionStyles,
+        ...moveAnimationStyles,
+        ...opacityAnimationStyles,
+        ...blurAnimationStyles
       }}>
 
       {children}
