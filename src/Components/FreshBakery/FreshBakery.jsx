@@ -29,9 +29,7 @@ function FreshBakery() {
           opacityAnimation={{ from: 0.2, to: 1 }}
           blurAnimation={{ from: 10, to: 0 }}
         >
-          <div>
-            <img src={FreshBakeryBgimg1} alt="" />
-          </div>
+          <img src={FreshBakeryBgimg1} alt="" />
         </AnimationComponent>
 
         <div className="FreshBakery__container">
@@ -46,9 +44,7 @@ function FreshBakery() {
               opacityAnimation={{ from: 0.2, to: 1 }}
               blurAnimation={{ from: 10, to: 0 }}
             >
-
               <img src={FreshBakeryBgimg2} alt="" />
-
             </AnimationComponent>
 
             <AnimationComponent
