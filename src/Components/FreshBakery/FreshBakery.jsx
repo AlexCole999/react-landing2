@@ -61,7 +61,7 @@ function FreshBakery() {
             <AnimationComponent
               className={"FreshBakery__text"}
               moveAnimation={{ right: { from: -25, to: 0 } }}
-              transition={1}
+              transition={2.7}
               triggerOnce={true}
               opacityAnimation={{ from: 0, to: 1 }}
               blurAnimation={{ from: 10, to: 0 }}
@@ -72,7 +72,7 @@ function FreshBakery() {
             <AnimationComponent
               className={"FreshBakery__subtitle"}
               moveAnimation={{ left: { from: -25, to: 0 } }}
-              transition={1}
+              transition={2}
               delay={2500}
               triggerOnce={true}
               opacityAnimation={{ from: 0, to: 1 }}
