@@ -12,7 +12,7 @@ function FreshBakery() {
 
   const preloadFunction = () => {
     setTimeout(() => { setLoaded(true) }, 0)
-    setTimeout(() => { setLoaded(false) }, 4)
+    setTimeout(() => { setLoaded(false) }, 70)
     setTimeout(() => { setLoaded(true) }, 2500)
   }
 
