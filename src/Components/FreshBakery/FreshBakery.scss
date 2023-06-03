@@ -2,6 +2,32 @@
   background: rgba(231, 212, 190, 0.44);
   display: flex;
   justify-content: center;
+  position: relative;
+
+  &__bgimg1 {
+    position: absolute;
+    left: 0px;
+
+    @media screen and (min-width:1041px) {
+      top: 35px;
+    }
+
+  }
+
+  &__bgimg2 {
+    top: 80px;
+    right: -50px;
+
+    @media screen and (min-width:1041px) {
+      top: 140px;
+      right: 90px;
+    }
+
+    @media screen and (min-width:1271px) {
+      top: 200px;
+      right: 140px;
+    }
+  }
 
   &__container {
     max-width: 1440px;
@@ -18,6 +44,7 @@
   }
 
   &__leftside {
+    position: relative;
     padding-top: 55px;
     padding-bottom: 42px;
     display: flex;

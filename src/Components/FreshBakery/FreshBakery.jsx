@@ -1,5 +1,7 @@
 import './FreshBakery.scss'
 import mainImg from '../../assets/img/FreshBakery-img.jpeg'
+import FreshBakeryBgimg1 from '../../assets/img/FreshBakery-bgimg1.png'
+import FreshBakeryBgimg2 from '../../assets/img/FreshBakery-bgimg2.png'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
 import { useState } from 'react';
 import LoadingComponent from '../LoadingComponent/LoadingComponent';
@@ -18,9 +20,37 @@ function FreshBakery() {
 
       <div className="FreshBakery">
 
+        <AnimationComponent
+          className={"FreshBakery__bgimg1"}
+          postitionAbsolute={true}
+          transition={2}
+          triggerOnce={true}
+          moveAnimation={{ left: { from: -25, to: 0 } }}
+          opacityAnimation={{ from: 0.2, to: 1 }}
+          blurAnimation={{ from: 10, to: 0 }}
+        >
+          <div>
+            <img src={FreshBakeryBgimg1} alt="" />
+          </div>
+        </AnimationComponent>
+
         <div className="FreshBakery__container">
 
           <div className="FreshBakery__leftside">
+
+            <AnimationComponent
+              className={"FreshBakery__bgimg2"}
+              postitionAbsolute={true}
+              transition={2}
+              triggerOnce={true}
+              opacityAnimation={{ from: 0.2, to: 1 }}
+              blurAnimation={{ from: 10, to: 0 }}
+            >
+              <div className="FreshBakery__bgimg2">
+                <img src={FreshBakeryBgimg2} alt="" />
+              </div>
+            </AnimationComponent>
+
             <AnimationComponent
               className={"FreshBakery__title"}
               moveAnimation={{ left: { from: -25, to: 0 } }}

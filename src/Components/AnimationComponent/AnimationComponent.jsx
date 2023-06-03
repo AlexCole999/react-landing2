@@ -5,6 +5,7 @@ export default function AnimationComponent(
   {
     children,
     preloadComponent,
+    postitionAbsolute,
     className,
     delay,
     threshold,
@@ -46,7 +47,7 @@ export default function AnimationComponent(
       ref={ref}
       className={className ? className : null}
       style={{
-        position: "relative",
+        position: postitionAbsolute ? "absolute" : "relative",
         ...transitionStyles,
         ...moveAnimationStyles,
         ...opacityAnimationStyles,
