@@ -3,14 +3,21 @@ import mainImg from '../../assets/img/FreshBakery-img.jpeg'
 import FreshBakeryBgimg1 from '../../assets/img/FreshBakery-bgimg1.png'
 import FreshBakeryBgimg2 from '../../assets/img/FreshBakery-bgimg2.png'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import LoadingComponent from '../LoadingComponent/LoadingComponent';
 
 function FreshBakery() {
 
   const [loaded, setLoaded] = useState(false)
 
-  setTimeout(() => { setLoaded(true) }, 2500)
+  const preloadFunction = () => {
+    setTimeout(() => { setLoaded(true) }, 0)
+    setTimeout(() => { setLoaded(false) }, 4)
+    setTimeout(() => { setLoaded(true) }, 2500)
+  }
+
+  useEffect(preloadFunction, [])
+
 
   return (
 
