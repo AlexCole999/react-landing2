@@ -5,6 +5,20 @@
   flex-direction: column;
   align-items: center;
 
+
+  @media screen and (min-width:1041px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__leftside {
+    padding-top: 55px;
+    padding-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     font-family: 'Ultra';
     font-style: normal;
@@ -12,14 +26,13 @@
     font-size: 24px;
     line-height: 34px;
     color: #000000;
-    padding-top: 55px;
     max-width: 210px;
     text-align: center;
   }
 
   &__subtitle {
     padding-top: 30px;
-    padding-bottom: 42px;
+    text-align: center;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;

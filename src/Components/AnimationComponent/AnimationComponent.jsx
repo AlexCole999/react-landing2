@@ -5,6 +5,7 @@ export default function AnimationComponent(
   {
     children,
     preloadComponent,
+    className,
     delay,
     threshold,
     triggerOnce,
@@ -43,6 +44,7 @@ export default function AnimationComponent(
 
     <div
       ref={ref}
+      className={className ? className : null}
       style={{
         position: "relative",
         ...transitionStyles,

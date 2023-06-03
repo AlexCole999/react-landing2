@@ -18,51 +18,52 @@ function FreshBakery() {
 
       <div className="FreshBakery">
 
-        <AnimationComponent
-          moveAnimation={{ left: { from: -25, to: 0 } }}
-          transition={1}
-          triggerOnce={true}
-          opacityAnimation={{ from: 0, to: 1 }}
-          blurAnimation={{ from: 10, to: 0 }}
-        >
-          <div className="FreshBakery__title">
+        <div className="FreshBakery__leftside">
+          <AnimationComponent
+            className={"FreshBakery__title"}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            transition={1}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
             Fresh Bakery Every Day
-          </div>
-        </AnimationComponent>
+          </AnimationComponent>
 
-        <AnimationComponent
-          moveAnimation={{ right: { from: -25, to: 0 } }}
-          transition={1}
-          triggerOnce={true}
-          opacityAnimation={{ from: 0, to: 1 }}
-          blurAnimation={{ from: 10, to: 0 }}
-        >
-          <div className="FreshBakery__text">
+          <AnimationComponent
+            className={"FreshBakery__text"}
+            moveAnimation={{ right: { from: -25, to: 0 } }}
+            transition={1}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
             Even the all-powerful Pointing has no control about the blind texts it is an almost.
-          </div>
-        </AnimationComponent >
+          </AnimationComponent >
 
-        <AnimationComponent
-          moveAnimation={{ left: { from: -25, to: 0 } }}
-          transition={1}
-          delay={2500}
-          triggerOnce={true}
-          opacityAnimation={{ from: 0, to: 1 }}
-          blurAnimation={{ from: 10, to: 0 }}
-        >
-          <div className="FreshBakery__subtitle">
+          <AnimationComponent
+            className={"FreshBakery__subtitle"}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            transition={1}
+            delay={2500}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
             Sience 1984
-          </div>
-        </AnimationComponent>
+          </AnimationComponent>
+        </div>
 
-        <AnimationComponent
-          transition={2}
-          triggerOnce={true}
-          opacityAnimation={{ from: 0.2, to: 1 }}
-          blurAnimation={{ from: 10, to: 0 }}
-        >
-          <img src={mainImg} alt="" />
-        </AnimationComponent>
+        <div className="FreshBakery__img">
+          <AnimationComponent
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0.2, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <img src={mainImg} alt="" />
+          </AnimationComponent>
+        </div>
 
       </div >
 
