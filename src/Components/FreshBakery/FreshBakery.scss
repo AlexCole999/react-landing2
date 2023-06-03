@@ -1,22 +1,42 @@
 .FreshBakery {
   background: rgba(231, 212, 190, 0.44);
-  font-family: 'Ultra', serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  @media screen and (min-width:1041px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    @media screen and (min-width:1041px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
   }
 
   &__leftside {
     padding-top: 55px;
     padding-bottom: 42px;
+    min-width: 467px;
     display: flex;
+    align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 60px;
+      padding-left: clamp(15px, 10%, 135px);
+      padding-bottom: 0px;
+      align-items: start;
+      justify-content: flex-start;
+    }
+
+    @media screen and (min-width:1271px) {
+      padding-top: 160px;
+    }
+
   }
 
   &__title {
@@ -28,6 +48,20 @@
     color: #000000;
     max-width: 210px;
     text-align: center;
+
+    @media screen and (min-width:1041px) {
+      max-width: 470px;
+      order: -1;
+      text-align: left;
+      font-size: 54px;
+      line-height: 66px;
+      margin-top: 21px;
+    }
+
+    @media screen and (min-width:1271px) {
+      font-size: 72px;
+      line-height: 80px;
+    }
   }
 
   &__subtitle {
@@ -41,6 +75,12 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #000000;
+
+    @media screen and (min-width:1041px) {
+      order: -2;
+      text-align: left;
+      font-size: 16px;
+    }
   }
 
   &__text {
@@ -53,6 +93,24 @@
     line-height: 24px;
     text-align: center;
     color: #000000;
+
+    @media screen and (min-width:1041px) {
+      max-width: 280px;
+      order: 0;
+      padding-top: 14px;
+      text-align: left;
+      font-size: 20px;
+      line-height: 32px;
+      margin-top: 27px;
+    }
+
+    @media screen and (min-width:1271px) {
+      max-width: 470px;
+    }
+  }
+
+  &__img {
+    @media screen and (min-width:1041px) {}
   }
 
 }
