@@ -1,7 +1,5 @@
 import './App.scss'
-import { Suspense, lazy } from 'react';
-
-const Footer = lazy(() => import('./Components/Footer/Footer'))
+import { lazy } from 'react';
 const Nav = lazy(() => import('./Components/Nav/Nav'))
 const FreshBakery = lazy(() => import('./Components/FreshBakery/FreshBakery'))
 const Process = lazy(() => import('./Components/Process/Process'))
@@ -11,6 +9,7 @@ const AboutUs = lazy(() => import('./Components/AboutUs/AboutUs'))
 const Baker = lazy(() => import('./Components/Baker/Baker'))
 const Testimonials = lazy(() => import('./Components/Testimonials/Testimonials'))
 const GetInTouch = lazy(() => import('./Components/GetInTouch/GetInTouch'))
+const Footer = lazy(() => import('./Components/Footer/Footer'))
 
 function App() {
 
