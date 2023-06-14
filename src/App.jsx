@@ -1,14 +1,16 @@
 import './App.scss'
-import Nav from './Components/Nav/Nav';
-import FreshBakery from './Components/FreshBakery/FreshBakery';
-import Process from './Components/Process/Process';
-import Products from './Components/Products/Products';
-import Features from './Components/Features/Features';
-import AboutUs from './Components/AboutUs/AboutUs';
-import Baker from './Components/Baker/Baker';
-import Testimonials from './Components/Testimonials/Testimonials';
-import GetInTouch from './Components/GetInTouch/GetInTouch';
-import Footer from './Components/Footer/Footer';
+import { Suspense, lazy } from 'react';
+
+const Footer = lazy(() => import('./Components/Footer/Footer'))
+const Nav = lazy(() => import('./Components/Nav/Nav'))
+const FreshBakery = lazy(() => import('./Components/FreshBakery/FreshBakery'))
+const Process = lazy(() => import('./Components/Process/Process'))
+const Products = lazy(() => import('./Components/Products/Products'))
+const Features = lazy(() => import('./Components/Features/Features'))
+const AboutUs = lazy(() => import('./Components/AboutUs/AboutUs'))
+const Baker = lazy(() => import('./Components/Baker/Baker'))
+const Testimonials = lazy(() => import('./Components/Testimonials/Testimonials'))
+const GetInTouch = lazy(() => import('./Components/GetInTouch/GetInTouch'))
 
 function App() {
 
@@ -16,7 +18,6 @@ function App() {
     <div className="App">
       <Nav />
       <FreshBakery />
-      <Footer />
       <AboutUs />
       <Features />
       <Products />
@@ -24,6 +25,7 @@ function App() {
       <Baker />
       <Testimonials />
       <GetInTouch />
+      <Footer />
     </div>
   )
 }
