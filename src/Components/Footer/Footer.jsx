@@ -50,11 +50,14 @@ function Footer() {
 
         </div>
 
-        <div className="Footer__divider"></div>
+        <div className="Footer__dividercontainer">
+          <div className="Footer__divider"></div>
+        </div>
+
 
         <div className="Footer__bottomcontent">
 
-          <div className="Footer__bottomcontenttop">
+          <div className="Footer__bottomcontentelems">
             <div className="Footer__elem">Terms of Use</div>
             <div className="Footer__elem">Privacy Policy</div>
           </div>
@@ -62,6 +65,7 @@ function Footer() {
           <div className="Footer__rights">
             Copyright © 2020 Laaqiq. All Rights Reserved.
           </div>
+
         </div>
 
       </div>
