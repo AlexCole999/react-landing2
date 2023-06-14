@@ -1,5 +1,7 @@
 .Footer {
   background-color: #171B1B;
+  display: flex;
+  justify-content: center;
 
   &__container {
     max-width: 1440px;
@@ -61,7 +63,13 @@
     height: 1px;
   }
 
-  &__bottomcontent {}
+  &__bottomcontent {
+    &top {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
 
   &__rights {
     padding-top: 20px;

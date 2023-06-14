@@ -54,7 +54,7 @@ function Footer() {
 
         <div className="Footer__bottomcontent">
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px' }}>
+          <div className="Footer__bottomcontenttop">
             <div className="Footer__elem">Terms of Use</div>
             <div className="Footer__elem">Privacy Policy</div>
           </div>
