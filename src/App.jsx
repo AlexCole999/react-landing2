@@ -1,5 +1,7 @@
+import LoadingComponent from './Components/LoadingComponent/LoadingComponent';
+import { lazy, Suspense } from 'react';
 import './App.scss'
-import { lazy } from 'react';
+
 const Nav = lazy(() => import('./Components/Nav/Nav'))
 const FreshBakery = lazy(() => import('./Components/FreshBakery/FreshBakery'))
 const Process = lazy(() => import('./Components/Process/Process'))
@@ -15,16 +17,18 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <FreshBakery />
-      <AboutUs />
-      <Features />
-      <Products />
-      <Process />
-      <Baker />
-      <Testimonials />
-      <GetInTouch />
-      <Footer />
+      <Suspense fallback={<LoadingComponent />}>
+        <Nav />
+        <FreshBakery />
+        <AboutUs />
+        <Features />
+        <Products />
+        <Process />
+        <Baker />
+        <Testimonials />
+        <GetInTouch />
+        <Footer />
+      </Suspense>
     </div>
   )
 }
