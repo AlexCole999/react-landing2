@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Nav />
       <FreshBakery />
+      <Footer />
       <AboutUs />
       <Features />
       <Products />
@@ -23,7 +24,6 @@ function App() {
       <Baker />
       <Testimonials />
       <GetInTouch />
-      <Footer />
     </div>
   )
 }
