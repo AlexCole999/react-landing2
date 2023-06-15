@@ -29,7 +29,7 @@ function FreshBakery() {
 
         <AnimationComponent
           className={"FreshBakery__bgimg1"}
-          postitionAbsolute={true}
+          positionAbsolute={true}
           transition={2}
           triggerOnce={true}
           moveAnimation={{ left: { from: -25, to: 0 } }}
@@ -45,7 +45,7 @@ function FreshBakery() {
 
             <AnimationComponent
               className={"FreshBakery__bgimg2"}
-              postitionAbsolute={true}
+              positionAbsolute={true}
               transition={2}
               triggerOnce={true}
               opacityAnimation={{ from: 0.2, to: 1 }}

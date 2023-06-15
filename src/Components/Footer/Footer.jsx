@@ -3,6 +3,7 @@ import Logo from '../../assets/icons/LogoWhite.svg'
 import twitter from '../../assets/icons/twitterIcon.svg'
 import facebook from '../../assets/icons/facebookIcon.svg'
 import instagram from '../../assets/icons/instagramIcon.svg'
+import AnimationComponent from './../AnimationComponent/AnimationComponent';
 
 function Footer() {
 
@@ -13,9 +14,13 @@ function Footer() {
 
         <div className="Footer__topcontent">
 
-          <div className="Footer__logo">
-            <img src={Logo} alt="" />
-          </div>
+          <AnimationComponent
+            transition={1}
+          >
+            <div className="Footer__logo">
+              <img src={Logo} alt="" />
+            </div>
+          </AnimationComponent>
 
           <div className="Footer__topcontentcolumn">
             <div className="Footer__title">Menu</div>
