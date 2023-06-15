@@ -2,6 +2,7 @@ import './Features.scss'
 import icon1 from '../../assets/icons/Features-icon1.svg'
 import icon2 from '../../assets/icons/Features-icon2.svg'
 import icon3 from '../../assets/icons/Features-icon3.svg'
+import { ReactComponent as Icon3 } from '../../assets/icons/Features-icon3.svg'
 import elemPicture from '../../assets/icons/Features-elemPicture.webp'
 
 function Features() {
@@ -38,7 +39,7 @@ function Features() {
 
           <div className="Features__rowelem" style={{ backgroundColor: '#F9BF77' }}>
             <div className="Features__rowelemcontent">
-              <img className="Features__rowelemicon" src={icon3} alt="" />
+              <Icon3 className='Features__rowelemicon' />
               <div className="Features__rowelemtitle">Tasty</div>
               <div className="Features__rowelemtext">And if she hasn’t been rewritten, then they are still using her.</div>
               <img className="Features__rowelempicture" src={elemPicture} alt="" />

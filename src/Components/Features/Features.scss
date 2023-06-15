@@ -61,6 +61,14 @@
       margin-top: 30px;
       position: relative;
 
+      &:hover {
+        .Features__rowelemicon path {
+          width: 90px;
+          fill: red;
+        }
+      }
+
+
       &content {
         padding-top: 22px;
         padding-right: 0;
@@ -72,6 +80,23 @@
       &icon {
         width: 72px;
         height: 55px;
+      }
+
+      &icon {
+        width: 72px;
+        height: 55px;
+      }
+
+      &icon path {
+        fill: blue;
+
+        // &:hover {
+        //   fill: red;
+        // }
+      }
+
+      &icon path {
+        fill: blue;
       }
 
       &title {
