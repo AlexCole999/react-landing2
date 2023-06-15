@@ -51,9 +51,58 @@
   }
 
   &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+
     &elem {
-      padding-left: 60px;
-      padding-right: 60px;
+      margin-top: 30px;
+      position: relative;
+
+      &content {
+        padding-top: 22px;
+        padding-right: 0;
+        padding-left: 27px;
+        min-width: 270px;
+        min-height: 270px;
+      }
+
+      &icon {
+        width: 72px;
+        height: 55px;
+      }
+
+      &title {
+        padding-top: 12px;
+        font-family: 'Ultra';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 48px;
+        color: #171B1B;
+      }
+
+      &text {
+        padding-top: 12px;
+        max-width: 180px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 32px;
+        color: rgba(51, 51, 51, 0.496405);
+      }
+
+      &picture {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 122px;
+      }
+
     }
   }
 }
