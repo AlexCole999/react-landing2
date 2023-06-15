@@ -1,4 +1,5 @@
 import './Features.scss'
+import AnimationComponent from '../AnimationComponent/AnimationComponent'
 import { ReactComponent as Icon1 } from '../../assets/icons/Features-icon1.svg'
 import { ReactComponent as Icon2 } from '../../assets/icons/Features-icon2.svg'
 import { ReactComponent as Icon3 } from '../../assets/icons/Features-icon3.svg'
@@ -10,40 +11,87 @@ function Features() {
     <div className="Features">
       <div className="Features__container">
 
-        <div className="Features__title">
-          Baked With Love
-        </div>
+        <AnimationComponent
+          className={"Features__title"}
+          transition={1.3}
+          triggerOnce={true}
+          moveAnimation={{ bottom: { from: -25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+          blurAnimation={{ from: 10, to: 0 }}
+        >
+          <div >
+            Baked With Love
+          </div>
+        </AnimationComponent>
 
-        <div className="Features__subtitle">
-          Our Features
-        </div>
+        <AnimationComponent
+          className={"Features__subtitle"}
+          delay={800}
+          transition={1.3}
+          triggerOnce={true}
+          moveAnimation={{ bottom: { from: -25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+          blurAnimation={{ from: 10, to: 0 }}
+        >
+          <div>
+            Our Features
+          </div>
+        </AnimationComponent>
 
         <div className="Features__row">
 
-          <div className="Features__rowelem">
-            <div className="Features__rowelemcontent">
-              <Icon1 className='Features__rowelemicon' />
-              <div className="Features__rowelemtitle">Fresh</div>
-              <div className="Features__rowelemtext">Nothing the copy said could convince her and so it didn’t take long.</div>
+          <AnimationComponent
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Features__rowelem">
+              <div className="Features__rowelemcontent">
+                <Icon1 className='Features__rowelemicon' />
+                <div className="Features__rowelemtitle">Fresh</div>
+                <div className="Features__rowelemtext">Nothing the copy said could convince her and so it didn’t take long.</div>
+                <img className="Features__rowelempicture" src={elemPicture} alt="" />
+              </div>
             </div>
-          </div>
+          </AnimationComponent>
 
-          <div className="Features__rowelem">
-            <div className="Features__rowelemcontent">
-              <Icon2 className='Features__rowelemicon' />
-              <div className="Features__rowelemtitle">Natural</div>
-              <div className="Features__rowelemtext">Copy Writers ambushed her, made her drunk with Longe and Parole.</div>
+          <AnimationComponent
+            delay={800}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Features__rowelem">
+              <div className="Features__rowelemcontent">
+                <Icon2 className='Features__rowelemicon' />
+                <div className="Features__rowelemtitle">Natural</div>
+                <div className="Features__rowelemtext">Copy Writers ambushed her, made her drunk with Longe and Parole.</div>
+                <img className="Features__rowelempicture" src={elemPicture} alt="" />
+              </div>
             </div>
-          </div>
+          </AnimationComponent>
 
-          <div className="Features__rowelem" style={{ backgroundColor: '#F9BF77' }}>
-            <div className="Features__rowelemcontent">
-              <Icon3 className='Features__rowelemicon' />
-              <div className="Features__rowelemtitle">Tasty</div>
-              <div className="Features__rowelemtext">And if she hasn’t been rewritten, then they are still using her.</div>
-              <img className="Features__rowelempicture" src={elemPicture} alt="" />
+          <AnimationComponent
+            delay={1600}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Features__rowelem">
+              <div className="Features__rowelemcontent">
+                <Icon3 className='Features__rowelemicon' />
+                <div className="Features__rowelemtitle">Tasty</div>
+                <div className="Features__rowelemtext">And if she hasn’t been rewritten, then they are still using her.</div>
+                <img className="Features__rowelempicture" src={elemPicture} alt="" />
+              </div>
             </div>
-          </div>
+          </AnimationComponent>
 
         </div>
 

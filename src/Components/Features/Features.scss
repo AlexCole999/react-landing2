@@ -57,13 +57,33 @@
     margin-left: 60px;
     margin-right: 60px;
 
+    @media screen and (min-width:1041px) {
+      margin-top: 70px;
+    }
+
     &elem {
+      min-width: 270px;
+      min-height: 270px;
       margin-top: 30px;
       position: relative;
+      transition: 0.3s all ease;
+
+      @media screen and (min-width:1041px) {
+        margin-top: 0px;
+        min-width: 400px;
+        min-height: 384px;
+      }
 
       &:hover {
+        background-color: #F5AE5C;
+        transform: scale(1.08);
+
         .Features__rowelemicon path {
-          fill: red;
+          fill: white;
+        }
+
+        .Features__rowelempicture {
+          opacity: 1;
         }
       }
 
@@ -71,18 +91,22 @@
         padding-top: 22px;
         padding-right: 0;
         padding-left: 27px;
-        min-width: 270px;
-        min-height: 270px;
+
+        @media screen and (min-width:1041px) {
+          padding-top: 56px;
+          padding-right: 0;
+          padding-left: 64px;
+        }
       }
 
       &icon {
         width: 72px;
         height: 55px;
-      }
 
-      &icon {
-        width: 72px;
-        height: 55px;
+        @media screen and (min-width:1041px) {
+          width: 102px;
+          height: 87px;
+        }
       }
 
       &icon path {
@@ -97,6 +121,12 @@
         font-size: 16px;
         line-height: 48px;
         color: #171B1B;
+
+        @media screen and (min-width:1041px) {
+          padding-top: 58px;
+          font-size: 40px;
+          line-height: 48px;
+        }
       }
 
       &text {
@@ -108,14 +138,28 @@
         font-size: 12px;
         line-height: 32px;
         color: rgba(51, 51, 51, 0.496405);
+
+        @media screen and (min-width:1041px) {
+          padding-top: 18px;
+          font-size: 16px;
+          line-height: 32px;
+          max-width: 306px;
+        }
       }
 
       &picture {
+        transition: 0.3s all ease;
         position: absolute;
+        opacity: 0;
         top: 0;
         right: 0;
         width: 120px;
         height: 122px;
+
+        @media screen and (min-width:1041px) {
+          width: 179px;
+          height: 186px;
+        }
       }
 
     }
