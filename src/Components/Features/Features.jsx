@@ -1,7 +1,6 @@
 import './Features.scss'
-import icon1 from '../../assets/icons/Features-icon1.svg'
-import icon2 from '../../assets/icons/Features-icon2.svg'
-import icon3 from '../../assets/icons/Features-icon3.svg'
+import { ReactComponent as Icon1 } from '../../assets/icons/Features-icon1.svg'
+import { ReactComponent as Icon2 } from '../../assets/icons/Features-icon2.svg'
 import { ReactComponent as Icon3 } from '../../assets/icons/Features-icon3.svg'
 import elemPicture from '../../assets/icons/Features-elemPicture.webp'
 
@@ -23,7 +22,7 @@ function Features() {
 
           <div className="Features__rowelem">
             <div className="Features__rowelemcontent">
-              <img className="Features__rowelemicon" src={icon1} alt="" />
+              <Icon1 className='Features__rowelemicon' />
               <div className="Features__rowelemtitle">Fresh</div>
               <div className="Features__rowelemtext">Nothing the copy said could convince her and so it didn’t take long.</div>
             </div>
@@ -31,7 +30,7 @@ function Features() {
 
           <div className="Features__rowelem">
             <div className="Features__rowelemcontent">
-              <img className="Features__rowelemicon" src={icon2} alt="" />
+              <Icon2 className='Features__rowelemicon' />
               <div className="Features__rowelemtitle">Natural</div>
               <div className="Features__rowelemtext">Copy Writers ambushed her, made her drunk with Longe and Parole.</div>
             </div>

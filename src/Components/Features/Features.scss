@@ -63,11 +63,9 @@
 
       &:hover {
         .Features__rowelemicon path {
-          width: 90px;
           fill: red;
         }
       }
-
 
       &content {
         padding-top: 22px;
@@ -88,15 +86,7 @@
       }
 
       &icon path {
-        fill: blue;
-
-        // &:hover {
-        //   fill: red;
-        // }
-      }
-
-      &icon path {
-        fill: blue;
+        fill: #F5AE5C;
       }
 
       &title {
