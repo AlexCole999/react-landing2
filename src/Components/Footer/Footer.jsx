@@ -15,43 +15,75 @@ function Footer() {
         <div className="Footer__topcontent">
 
           <AnimationComponent
-            transition={1}
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            delay={200}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
           >
             <div className="Footer__logo">
               <img src={Logo} alt="" />
             </div>
           </AnimationComponent>
 
-          <div className="Footer__topcontentcolumn">
-            <div className="Footer__title">Menu</div>
-            <div className="Footer__elem">About</div>
-            <div className="Footer__elem">Product</div>
-            <div className="Footer__elem">Recipes</div>
-            <div className="Footer__elem">Contact</div>
-          </div>
+          <AnimationComponent
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            delay={800}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Footer__topcontentcolumn">
+              <div className="Footer__title">Menu</div>
+              <div className="Footer__elem">About</div>
+              <div className="Footer__elem">Product</div>
+              <div className="Footer__elem">Recipes</div>
+              <div className="Footer__elem">Contact</div>
+            </div>
+          </AnimationComponent>
 
-          <div className="Footer__topcontentcolumn">
-            <div className="Footer__title">Service</div>
-            <div className="Footer__elem">Bakery</div>
-            <div className="Footer__elem">Delivery</div>
-            <div className="Footer__elem">Catering</div>
-            <div className="Footer__elem">Corporate</div>
-          </div>
+          <AnimationComponent
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            delay={1400}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Footer__topcontentcolumn">
+              <div className="Footer__title">Service</div>
+              <div className="Footer__elem">Bakery</div>
+              <div className="Footer__elem">Delivery</div>
+              <div className="Footer__elem">Catering</div>
+              <div className="Footer__elem">Corporate</div>
+            </div>
+          </AnimationComponent>
 
-          <div className="Footer__topcontentcolumn">
-            <div className="Footer__title">Social</div>
-            <div className="Footer__icons">
-              <div className="Footer__iconsitem">
-                <img src={twitter} alt="" />
-              </div>
-              <div className="Footer__iconsitem">
-                <img src={facebook} alt="" />
-              </div>
-              <div className="Footer__iconsitem">
-                <img src={instagram} alt="" />
+          <AnimationComponent
+            moveAnimation={{ left: { from: -25, to: 0 } }}
+            delay={2000}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Footer__topcontentcolumn">
+              <div className="Footer__title">Social</div>
+              <div className="Footer__icons">
+                <div className="Footer__iconsitem">
+                  <img src={twitter} alt="" />
+                </div>
+                <div className="Footer__iconsitem">
+                  <img src={facebook} alt="" />
+                </div>
+                <div className="Footer__iconsitem">
+                  <img src={instagram} alt="" />
+                </div>
               </div>
             </div>
-          </div>
+          </AnimationComponent>
 
         </div>
 
@@ -62,14 +94,31 @@ function Footer() {
 
         <div className="Footer__bottomcontent">
 
-          <div className="Footer__bottomcontentelems">
-            <div className="Footer__elem">Terms of Use</div>
-            <div className="Footer__elem">Privacy Policy</div>
-          </div>
+          <AnimationComponent
+            moveAnimation={{ bottom: { from: -25, to: 0 } }}
+            delay={2000}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Footer__bottomcontentelems">
+              <div className="Footer__elem">Terms of Use</div>
+              <div className="Footer__elem">Privacy Policy</div>
+            </div>
+          </AnimationComponent>
 
-          <div className="Footer__rights">
-            Copyright © 2020 Laaqiq. All Rights Reserved.
-          </div>
+          <AnimationComponent
+            delay={2600}
+            transition={2}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 10, to: 0 }}
+          >
+            <div className="Footer__rights">
+              Copyright © 2020 Laaqiq. All Rights Reserved.
+            </div>
+          </AnimationComponent>
 
         </div>
 
