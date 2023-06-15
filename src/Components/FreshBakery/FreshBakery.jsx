@@ -1,6 +1,6 @@
 import './FreshBakery.scss'
-import mainImg from '../../assets/img/FreshBakery-img.jpeg'
-import mainImgZipped from '../../assets/img/FreshBakery-imgzipped.webp'
+import mainImg from '../../assets/img/FreshBakery-img.avif'
+import mainImgZipped from '../../assets/img/FreshBakery-imgzipped.avif'
 import FreshBakeryBgimg1 from '../../assets/img/FreshBakery-bgimg1.webp'
 import FreshBakeryBgimg2 from '../../assets/img/FreshBakery-bgimg2.png'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
