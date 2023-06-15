@@ -16,6 +16,7 @@ function Footer() {
 
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
+            threshold={0.65}
             delay={200}
             transition={2}
             triggerOnce={true}
@@ -29,6 +30,7 @@ function Footer() {
 
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
+            threshold={0.65}
             delay={800}
             transition={2}
             triggerOnce={true}
@@ -46,6 +48,7 @@ function Footer() {
 
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
+            threshold={0.65}
             delay={1400}
             transition={2}
             triggerOnce={true}
@@ -63,6 +66,7 @@ function Footer() {
 
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
+            threshold={0.65}
             delay={2000}
             transition={2}
             triggerOnce={true}
@@ -96,6 +100,7 @@ function Footer() {
 
           <AnimationComponent
             moveAnimation={{ bottom: { from: -25, to: 0 } }}
+            threshold={0.65}
             delay={2000}
             transition={2}
             triggerOnce={true}
