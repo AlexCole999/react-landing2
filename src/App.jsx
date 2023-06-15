@@ -20,8 +20,8 @@ function App() {
       <Nav />
       <Suspense fallback={<LoadingComponent />}>
         <FreshBakery />
-        <AboutUs />
         <Features />
+        <AboutUs />
         <Products />
         <Process />
         <Baker />
