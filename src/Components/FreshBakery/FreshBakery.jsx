@@ -30,7 +30,7 @@ function FreshBakery() {
           <AnimationComponent
             className={"FreshBakery__bgimg2"}
             positionAbsolute={true}
-            transition={3.3}
+            transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0.01, to: 1 }}
             blurAnimation={{ from: 20, to: 0 }}
