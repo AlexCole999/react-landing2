@@ -30,18 +30,19 @@ function FreshBakery() {
           <AnimationComponent
             className={"FreshBakery__bgimg2"}
             positionAbsolute={true}
-            transition={2}
+            transition={3.3}
             triggerOnce={true}
-            opacityAnimation={{ from: 0.2, to: 1 }}
-            blurAnimation={{ from: 10, to: 0 }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+            blurAnimation={{ from: 20, to: 0 }}
           >
             <img src={FreshBakeryBgimg2} alt="" />
           </AnimationComponent>
 
           <AnimationComponent
             className={"FreshBakery__title"}
-            moveAnimation={{ left: { from: -25, to: 0 } }}
-            transition={1}
+            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            transition={1.6}
+            transitionDelay={0.6}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}
@@ -51,8 +52,9 @@ function FreshBakery() {
 
           <AnimationComponent
             className={"FreshBakery__text"}
-            moveAnimation={{ right: { from: -25, to: 0 } }}
-            transition={2.7}
+            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            transition={1.6}
+            transitionDelay={1.8}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}
@@ -62,9 +64,9 @@ function FreshBakery() {
 
           <AnimationComponent
             className={"FreshBakery__subtitle"}
-            moveAnimation={{ left: { from: -25, to: 0 } }}
-            transition={2}
-            delay={2500}
+            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            transition={1.6}
+            transitionDelay={2.4}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}

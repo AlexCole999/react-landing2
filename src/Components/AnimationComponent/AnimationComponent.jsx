@@ -7,7 +7,6 @@ export default function AnimationComponent(
     preloadComponent,
     positionAbsolute,
     className,
-    delay,
     threshold,
     triggerOnce,
     transition,
@@ -19,7 +18,6 @@ export default function AnimationComponent(
   }) {
 
   const { ref, inView } = useInView({
-    delay: delay ? delay : null,
     threshold: threshold ? threshold : 0,
     triggerOnce: triggerOnce == true ? triggerOnce : false
   });

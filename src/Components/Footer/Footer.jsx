@@ -17,7 +17,7 @@ function Footer() {
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
             threshold={0.65}
-            delay={200}
+            transitionDelay={0.2}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
@@ -31,7 +31,7 @@ function Footer() {
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
             threshold={0.65}
-            delay={800}
+            transitionDelay={0.8}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
@@ -49,7 +49,7 @@ function Footer() {
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
             threshold={0.65}
-            delay={1400}
+            transitionDelay={1.4}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
@@ -67,7 +67,7 @@ function Footer() {
           <AnimationComponent
             moveAnimation={{ left: { from: -25, to: 0 } }}
             threshold={0.65}
-            delay={2000}
+            transitionDelay={2}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
@@ -101,7 +101,7 @@ function Footer() {
           <AnimationComponent
             moveAnimation={{ bottom: { from: -25, to: 0 } }}
             threshold={0.65}
-            delay={2000}
+            transitionDelay={2}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
@@ -114,7 +114,7 @@ function Footer() {
           </AnimationComponent>
 
           <AnimationComponent
-            delay={2600}
+            transitionDelay={2.6}
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
