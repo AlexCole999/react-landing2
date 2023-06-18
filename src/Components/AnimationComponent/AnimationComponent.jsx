@@ -11,6 +11,8 @@ export default function AnimationComponent(
     threshold,
     triggerOnce,
     transition,
+    transitionStyle,
+    transitionDelay,
     moveAnimation,
     opacityAnimation,
     blurAnimation
@@ -23,7 +25,8 @@ export default function AnimationComponent(
   });
 
   const transitionStyles = {
-    transition: `${transition}s all ease-out`
+    transition: `${transition}s all ${transitionStyle ? transitionStyle : 'ease-out'}`,
+    transitionDelay: `${transitionDelay ? `${transitionDelay}s` : null}`
   }
 
   const moveAnimationStyles = {

@@ -26,7 +26,7 @@ function Features() {
 
         <AnimationComponent
           className={"Features__subtitle"}
-          delay={800}
+          transitionDelay={0.8}
           transition={1.3}
           triggerOnce={true}
           moveAnimation={{ bottom: { from: -25, to: 0 } }}
@@ -58,7 +58,7 @@ function Features() {
           </AnimationComponent>
 
           <AnimationComponent
-            delay={800}
+            transitionDelay={0.8}
             transition={1.3}
             triggerOnce={true}
             moveAnimation={{ left: { from: -25, to: 0 } }}
@@ -76,7 +76,7 @@ function Features() {
           </AnimationComponent>
 
           <AnimationComponent
-            delay={1600}
+            transitionDelay={1.6}
             transition={1.3}
             triggerOnce={true}
             moveAnimation={{ left: { from: -25, to: 0 } }}
