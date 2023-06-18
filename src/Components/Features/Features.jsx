@@ -15,7 +15,7 @@ function Features() {
           className={"Features__title"}
           transition={1.3}
           triggerOnce={true}
-          moveAnimation={{ bottom: { from: -25, to: 0 } }}
+          moveAnimation={{ bottom: { from: 25, to: 0 } }}
           opacityAnimation={{ from: 0.01, to: 1 }}
           blurAnimation={{ from: 10, to: 0 }}
         >
@@ -29,7 +29,7 @@ function Features() {
           transitionDelay={0.8}
           transition={1.3}
           triggerOnce={true}
-          moveAnimation={{ bottom: { from: -25, to: 0 } }}
+          moveAnimation={{ bottom: { from: 25, to: 0 } }}
           opacityAnimation={{ from: 0.01, to: 1 }}
           blurAnimation={{ from: 10, to: 0 }}
         >
@@ -43,7 +43,7 @@ function Features() {
           <AnimationComponent
             transition={1.3}
             triggerOnce={true}
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}
           >
@@ -61,7 +61,7 @@ function Features() {
             transitionDelay={0.8}
             transition={1.3}
             triggerOnce={true}
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}
           >
@@ -79,7 +79,7 @@ function Features() {
             transitionDelay={1.6}
             transition={1.3}
             triggerOnce={true}
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
             blurAnimation={{ from: 10, to: 0 }}
           >

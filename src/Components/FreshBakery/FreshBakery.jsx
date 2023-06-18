@@ -16,7 +16,7 @@ function FreshBakery() {
         positionAbsolute={true}
         transition={2}
         triggerOnce={true}
-        moveAnimation={{ left: { from: -25, to: 0 } }}
+        moveAnimation={{ left: { from: 25, to: 0 } }}
         opacityAnimation={{ from: 0.2, to: 1 }}
         blurAnimation={{ from: 10, to: 0 }}
       >

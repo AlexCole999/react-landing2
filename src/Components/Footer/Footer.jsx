@@ -15,7 +15,7 @@ function Footer() {
         <div className="Footer__topcontent">
 
           <AnimationComponent
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             threshold={0.65}
             transitionDelay={0.2}
             transition={2}
@@ -29,7 +29,7 @@ function Footer() {
           </AnimationComponent>
 
           <AnimationComponent
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             threshold={0.65}
             transitionDelay={0.8}
             transition={2}
@@ -47,7 +47,7 @@ function Footer() {
           </AnimationComponent>
 
           <AnimationComponent
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             threshold={0.65}
             transitionDelay={1.4}
             transition={2}
@@ -65,7 +65,7 @@ function Footer() {
           </AnimationComponent>
 
           <AnimationComponent
-            moveAnimation={{ left: { from: -25, to: 0 } }}
+            moveAnimation={{ left: { from: 25, to: 0 } }}
             threshold={0.65}
             transitionDelay={2}
             transition={2}
@@ -99,7 +99,7 @@ function Footer() {
         <div className="Footer__bottomcontent">
 
           <AnimationComponent
-            moveAnimation={{ bottom: { from: -25, to: 0 } }}
+            moveAnimation={{ bottom: { from: 25, to: 0 } }}
             threshold={0.65}
             transitionDelay={2}
             transition={2}

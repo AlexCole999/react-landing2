@@ -12,7 +12,7 @@ function Nav() {
         transition={2}
         triggerOnce={true}
         opacityAnimation={{ from: 0, to: 1 }}
-        moveAnimation={{ left: { from: -25, to: 0 } }}
+        moveAnimation={{ left: { from: 25, to: 0 } }}
       >
         <img className='Nav__logo' src={Logo} alt="" />
       </AnimationComponent>
@@ -27,7 +27,7 @@ function Nav() {
         transition={2}
         triggerOnce={true}
         opacityAnimation={{ from: 0, to: 1 }}
-        moveAnimation={{ right: { from: -25, to: 0 } }}
+        moveAnimation={{ right: { from: 25, to: 0 } }}
       >
         <img src={header} alt="" />
       </AnimationComponent>

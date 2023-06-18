@@ -28,8 +28,11 @@ export default function AnimationComponent(
   }
 
   const moveAnimationStyles = {
-    left: moveAnimation?.left ? (inView ? `${moveAnimation?.left?.to}px` : `${moveAnimation?.left?.from}px`) : null,
-    right: moveAnimation?.right ? (inView ? `${moveAnimation?.right?.to}px` : `${moveAnimation?.right?.from}px`) : null,
+    transform:
+      moveAnimation?.left ?
+        (inView ? `translateX(${moveAnimation?.left?.to}px)` : `translateX(-${moveAnimation?.left?.from}px)`)
+        : moveAnimation?.right ?
+          (inView ? `translateX(${moveAnimation?.right?.to}px)` : `translateX(${moveAnimation?.right?.from}px)`) : null,
     top: moveAnimation?.top ? (inView ? `${moveAnimation?.top?.to}px` : `${moveAnimation?.top?.from}px`) : null,
     bottom: moveAnimation?.bottom ? (inView ? `${moveAnimation?.bottom?.to}px` : `${moveAnimation?.bottom?.from}px`) : null
   }
