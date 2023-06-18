@@ -17,7 +17,6 @@ function Features() {
           triggerOnce={true}
           moveAnimation={{ bottom: { from: 25, to: 0 } }}
           opacityAnimation={{ from: 0.01, to: 1 }}
-          blurAnimation={{ from: 3, to: 0 }}
         >
           <div >
             Baked With Love
@@ -31,7 +30,6 @@ function Features() {
           triggerOnce={true}
           moveAnimation={{ bottom: { from: 25, to: 0 } }}
           opacityAnimation={{ from: 0.01, to: 1 }}
-          blurAnimation={{ from: 3, to: 0 }}
         >
           <div>
             Our Features
@@ -45,7 +43,6 @@ function Features() {
             triggerOnce={true}
             moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Features__rowelem">
               <div className="Features__rowelemcontent">
@@ -63,7 +60,6 @@ function Features() {
             triggerOnce={true}
             moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Features__rowelem">
               <div className="Features__rowelemcontent">
@@ -81,7 +77,6 @@ function Features() {
             triggerOnce={true}
             moveAnimation={{ left: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Features__rowelem">
               <div className="Features__rowelemcontent">

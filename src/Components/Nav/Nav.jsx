@@ -13,7 +13,6 @@ function Nav() {
         triggerOnce={true}
         opacityAnimation={{ from: 0, to: 1 }}
         moveAnimation={{ left: { from: 25, to: 0 } }}
-        blurAnimation={{ from: 3, to: 0 }}
       >
         <img className='Nav__logo' src={Logo} alt="" />
       </AnimationComponent>
@@ -29,7 +28,6 @@ function Nav() {
         triggerOnce={true}
         opacityAnimation={{ from: 0, to: 1 }}
         moveAnimation={{ right: { from: 25, to: 0 } }}
-        blurAnimation={{ from: 3, to: 0 }}
       >
         <img src={header} alt="" />
       </AnimationComponent>

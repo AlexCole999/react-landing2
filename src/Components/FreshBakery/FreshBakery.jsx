@@ -18,7 +18,6 @@ function FreshBakery() {
         triggerOnce={true}
         moveAnimation={{ left: { from: 15, to: 0 } }}
         opacityAnimation={{ from: 0.2, to: 1 }}
-        blurAnimation={{ from: 5, to: 0 }}
       >
         <img src={FreshBakeryBgimg1} alt="" />
       </AnimationComponent>
@@ -33,7 +32,6 @@ function FreshBakery() {
             transition={4}
             triggerOnce={true}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            blurAnimation={{ from: 5, to: 0 }}
           >
             <img src={FreshBakeryBgimg2} alt="" />
           </AnimationComponent>
@@ -45,7 +43,6 @@ function FreshBakery() {
             transitionDelay={0.6}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             Fresh Bakery Every Day
           </AnimationComponent>
@@ -57,7 +54,6 @@ function FreshBakery() {
             transitionDelay={1.8}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             Even the all-powerful Pointing has no control about the blind texts it is an almost.
           </AnimationComponent >
@@ -69,7 +65,6 @@ function FreshBakery() {
             transitionDelay={2.4}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
           >
             Sience 1984
           </AnimationComponent>
@@ -80,7 +75,6 @@ function FreshBakery() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0.2, to: 1 }}
-            blurAnimation={{ from: 3, to: 0 }}
             preloadComponent={<img className="FreshBakery__img" src={mainImgZipped} alt="" />}
           >
             <img className="FreshBakery__img" src={mainImg} alt="" />
