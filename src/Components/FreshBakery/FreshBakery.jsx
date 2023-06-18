@@ -40,7 +40,7 @@ function FreshBakery() {
 
           <AnimationComponent
             className={"FreshBakery__title"}
-            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            moveAnimation={{ bottom: { from: 75, to: 0 } }}
             transition={1.6}
             transitionDelay={0.6}
             triggerOnce={true}
@@ -52,7 +52,7 @@ function FreshBakery() {
 
           <AnimationComponent
             className={"FreshBakery__text"}
-            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            moveAnimation={{ bottom: { from: 75, to: 0 } }}
             transition={1.6}
             transitionDelay={1.8}
             triggerOnce={true}
@@ -64,7 +64,7 @@ function FreshBakery() {
 
           <AnimationComponent
             className={"FreshBakery__subtitle"}
-            moveAnimation={{ bottom: { from: -75, to: 0 } }}
+            moveAnimation={{ bottom: { from: 75, to: 0 } }}
             transition={1.6}
             transitionDelay={2.4}
             triggerOnce={true}
