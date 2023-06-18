@@ -21,6 +21,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__logo">
               <img src={Logo} alt="" />
@@ -34,6 +35,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__topcontentcolumn">
               <div className="Footer__title">Menu</div>
@@ -51,6 +53,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__topcontentcolumn">
               <div className="Footer__title">Service</div>
@@ -68,6 +71,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__topcontentcolumn">
               <div className="Footer__title">Social</div>
@@ -101,6 +105,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__bottomcontentelems">
               <div className="Footer__elem">Terms of Use</div>
@@ -113,6 +118,7 @@ function Footer() {
             transition={2}
             triggerOnce={true}
             opacityAnimation={{ from: 0, to: 1 }}
+            blurAnimation={{ from: 3, to: 0 }}
           >
             <div className="Footer__rights">
               Copyright © 2020 Laaqiq. All Rights Reserved.
