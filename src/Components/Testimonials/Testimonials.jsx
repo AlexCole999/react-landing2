@@ -103,7 +103,6 @@ function Testimonials() {
 
             <AnimationComponent
               transition={1.3}
-              transitionDelay={0.6}
               triggerOnce={true}
               moveAnimation={{ left: { from: 25, to: 0 } }}
               opacityAnimation={{ from: 0.01, to: 1 }}
