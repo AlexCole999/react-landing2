@@ -118,7 +118,9 @@ function Testimonials() {
 
           {
             [1, 2, 3].map((elem) =>
-              <div className='Testimonials__rowcarouselelem'
+              <div
+                key={elem}
+                className='Testimonials__rowcarouselelem'
                 onClick={() => { console.log(elem, counter, counter == elem); setCounter(elem) }}
                 style={{
                   transform: counter == elem ? 'scale(1.5)' : null,
