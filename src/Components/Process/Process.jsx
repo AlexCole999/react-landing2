@@ -1,5 +1,6 @@
 import './Process.scss'
 import elemPicture from '../../assets/img/Process-img1.webp'
+import AnimationComponent from './../AnimationComponent/AnimationComponent';
 
 function RowElem({ elemPicture, counter, title, text }) {
   return (
@@ -22,16 +23,72 @@ function Process() {
 
       <div className="Process__container">
 
-        <div className="Process__title">How We Work</div>
+        <AnimationComponent
+          className={"Process__title"}
+          transition={1.3}
+          triggerOnce={true}
+          moveAnimation={{ bottom: { from: 25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+        >
+          <div>How We Work</div>
+        </AnimationComponent>
 
-        <div className="Process__subtitle">Our Process</div>
+        <AnimationComponent
+          className={"Process__subtitle"}
+          transitionDelay={0.8}
+          transition={1.3}
+          triggerOnce={true}
+          moveAnimation={{ bottom: { from: 25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+        >
+          <div >Our Process</div>
+        </AnimationComponent>
 
         <div className="Process__row">
 
-          <RowElem elemPicture={elemPicture} counter={"01"} title={"Contact"} text={"Nothing the copy said could convince her and so it didn’t take long."} />
-          <RowElem elemPicture={elemPicture} counter={"02"} title={"Baking"} text={"The copy said could convince her and so it didn’t take long."} />
-          <RowElem elemPicture={elemPicture} counter={"03"} title={"Delivery"} text={"Nothing the copy said could convince her and so it didn’t take."} />
-          <RowElem elemPicture={elemPicture} counter={"04"} title={"Tasty"} text={"Copy said could convince her and so it didn’t take long."} />
+          <AnimationComponent
+            className={"Process_maximizedzindexonhover"}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <RowElem elemPicture={elemPicture} counter={"01"} title={"Contact"} text={"Nothing the copy said could convince her and so it didn’t take long."} />
+          </AnimationComponent>
+
+          <AnimationComponent
+            className={"Process_maximizedzindexonhover"}
+            transitionDelay={0.4}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <RowElem elemPicture={elemPicture} counter={"02"} title={"Baking"} text={"The copy said could convince her and so it didn’t take long."} />
+          </AnimationComponent>
+
+          <AnimationComponent
+            className={"Process_maximizedzindexonhover"}
+            transitionDelay={0.8}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <RowElem elemPicture={elemPicture} counter={"03"} title={"Delivery"} text={"Nothing the copy said could convince her and so it didn’t take."} />
+          </AnimationComponent>
+
+          <AnimationComponent
+            className={"Process_maximizedzindexonhover"}
+            transitionDelay={1.2}
+            transition={1.3}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <RowElem elemPicture={elemPicture} counter={"04"} title={"Tasty"} text={"Copy said could convince her and so it didn’t take long."} />
+          </AnimationComponent>
+
 
         </div>
 

@@ -79,7 +79,6 @@
       }
 
       &:hover {
-        z-index: 10000;
         cursor: pointer;
         background-color: #F5AE5C;
         transform: scale(1.08);
@@ -181,6 +180,13 @@
         }
       }
 
+    }
+
+  }
+
+  &_maximizedzindexonhover {
+    &:hover {
+      z-index: 10000;
     }
   }
 
