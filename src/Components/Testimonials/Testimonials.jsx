@@ -60,7 +60,7 @@ function Testimonials() {
         <div className="Testimonials__row">
 
           <div className="Testimonials__rowcontainer"
-            style={{ right: `${(counter - 1) * 384 - 20}px` }}
+            style={{ right: `${(counter - 1) * 384}px` }}
           >
 
             <AnimationComponent
