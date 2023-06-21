@@ -1,11 +1,17 @@
 .Nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 24px;
+  justify-content: center;
 
-  @media screen and (min-width:1440px) {
-    padding: 16px 135px 25px 135px;
+  &__container {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+
+    @media screen and (min-width:1440px) {
+      padding: 16px 135px 25px 135px;
+    }
   }
 
   &__leftside {
