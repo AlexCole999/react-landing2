@@ -59,53 +59,73 @@ function Testimonials() {
 
         <div className="Testimonials__row">
 
-          <AnimationComponent
-            transition={1.3}
-            triggerOnce={true}
-            moveAnimation={{ left: { from: 25, to: 0 } }}
-            opacityAnimation={{ from: 0.01, to: 1 }}
+          <div className="Testimonials__rowcontainer"
+            style={{ right: `${(counter - 1) * 384 - 20}px` }}
           >
-            <RowElem img={img1} title={"Very, Very Delicious"} text={"Nothing the copy said could convince her and so it didn’t take long. A small river named Duden flows by their"} />
-          </AnimationComponent>
 
-          <AnimationComponent
-            transition={1.3}
-            transitionDelay={0.6}
-            triggerOnce={true}
-            moveAnimation={{ left: { from: 25, to: 0 } }}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <RowElem img={img2} title={"Best Bakery in Town"} text={"Copy Writers ambushed her, made her drunk with Longe and Parole. A small river named Duden flows by their place"} />
-          </AnimationComponent>
+            <AnimationComponent
+              transition={1.3}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 25, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <RowElem img={img1} title={"Very, Very Delicious"} text={"Nothing the copy said could convince her and so it didn’t take long. A small river named Duden flows by their"} />
+            </AnimationComponent>
 
-          <AnimationComponent
-            transition={1.3}
-            transitionDelay={1.2}
-            triggerOnce={true}
-            moveAnimation={{ left: { from: 25, to: 0 } }}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <RowElem img={img3} title={"Well Organized"} text={"«And if she hasn’t been rewritten, then they are still using her. A small river named Duden flows by their place"} />
-          </AnimationComponent>
+            <AnimationComponent
+              transition={1.3}
+              transitionDelay={0.6}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 25, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <RowElem img={img2} title={"Best Bakery in Town"} text={"Copy Writers ambushed her, made her drunk with Longe and Parole. A small river named Duden flows by their place"} />
+            </AnimationComponent>
+
+            <AnimationComponent
+              transition={1.3}
+              transitionDelay={1.2}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 25, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <RowElem img={img3} title={"Well Organized"} text={"«And if she hasn’t been rewritten, then they are still using her. A small river named Duden flows by their place"} />
+            </AnimationComponent>
+
+            <AnimationComponent
+              transition={1.3}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 25, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <RowElem img={img1} title={"Very, Very Delicious"} text={"Nothing the copy said could convince her and so it didn’t take long. A small river named Duden flows by their"} />
+            </AnimationComponent>
+
+            <AnimationComponent
+              transition={1.3}
+              transitionDelay={0.6}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 25, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <RowElem img={img2} title={"Best Bakery in Town"} text={"Copy Writers ambushed her, made her drunk with Longe and Parole. A small river named Duden flows by their place"} />
+            </AnimationComponent>
+
+          </div>
 
         </div>
 
-        <div className="Testimonials__rowhandler">
+        <div className="Testimonials__rowcarousel">
 
           {
-            [1, 2, 3]
-              .map((elem, index) =>
-                <div
-                  onClick={() => { console.log(elem, counter, counter == elem) }}
-                  style={{
-                    cursor: 'pointer',
-                    display: 'flex',
-                    borderRadius: '50%',
-                    width: counter == elem ? '16px' : '8px',
-                    height: counter == elem ? '16px' : '8px',
-                    backgroundColor: counter == elem ? '#171B1B' : '#9EAD8D'
-                  }}>
-                </div>)
+            [1, 2, 3].map((elem) =>
+              <div className='Testimonials__rowcarouselelem'
+                onClick={() => { console.log(elem, counter, counter == elem); setCounter(elem) }}
+                style={{
+                  transform: counter == elem ? 'scale(1.5)' : null,
+                  backgroundColor: counter == elem ? '#171B1B' : '#9EAD8D'
+                }}>
+              </div>)
           }
 
         </div>

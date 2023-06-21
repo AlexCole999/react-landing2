@@ -57,17 +57,45 @@
   &__row {
     padding-top: 55px;
     padding-bottom: 55px;
-    position: relative;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 55px;
+    overflow: hidden;
+    max-width: 1180px;
 
-    &handler {
+    @media screen and (min-width:1168px) {
+      padding-top: 70px;
+    }
+
+    &container {
+      transition: 0.6s all ease-in;
+      right: 0px;
+      position: relative;
       display: flex;
-      align-items: center;
-      column-gap: 20px;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 55px;
+
+      @media screen and (min-width:1168px) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    &carousel {
+      display: none;
+
+      @media screen and (min-width:1168px) {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+      }
+
+      &elem {
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
     }
 
     &elem {
@@ -75,6 +103,10 @@
       width: 100%;
       max-width: 384px;
       transition: 0.3s all ease-out;
+
+      @media screen and (min-width:1168px) {
+        min-width: 384px;
+      }
 
       &:hover {
         cursor: pointer;
@@ -128,10 +160,6 @@
         line-height: 32px;
         color: rgba(51, 51, 51, 0.496405);
       }
-    }
-
-    @media screen and (min-width:1041px) {
-      padding-top: 53px;
     }
 
   }
