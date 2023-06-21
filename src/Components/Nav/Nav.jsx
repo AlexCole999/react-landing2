@@ -11,6 +11,7 @@ function Nav() {
       <div className="Nav__container">
 
         <div className="Nav__leftside">
+
           <AnimationComponent
             transition={2}
             triggerOnce={true}
@@ -19,7 +20,6 @@ function Nav() {
           >
             <img className='Nav__logo' src={Logo} alt="" />
           </AnimationComponent>
-
 
           <div className="Nav__menu">
             <AnimationComponent
@@ -31,6 +31,7 @@ function Nav() {
             >
               <div className="Nav__menuelem">About</div>
             </AnimationComponent>
+
             <AnimationComponent
               transition={1.7}
               transitionDelay={1.4}
@@ -40,6 +41,7 @@ function Nav() {
             >
               <div className="Nav__menuelem">Products</div>
             </AnimationComponent>
+
             <AnimationComponent
               transition={1.7}
               transitionDelay={1.6}
@@ -49,11 +51,13 @@ function Nav() {
             >
               <div className="Nav__menuelem">Recipes</div>
             </AnimationComponent>
+
           </div>
 
         </div>
 
         <div className="Nav__rightside">
+
           <AnimationComponent
             transition={2}
             triggerOnce={true}
@@ -63,6 +67,7 @@ function Nav() {
             <img className="Nav__buttonburger" src={header} alt="" />
             <button className="Nav__buttoncontact">CONTACT</button>
           </AnimationComponent>
+
         </div>
 
       </div>
