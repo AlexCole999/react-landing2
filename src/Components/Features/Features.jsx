@@ -8,7 +8,9 @@ import elemPicture from '../../assets/icons/Features-elemPicture.webp'
 function Features() {
 
   return (
+
     <div className="Features">
+
       <div className="Features__container">
 
         <AnimationComponent
