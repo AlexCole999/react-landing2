@@ -1,3 +1,139 @@
 .Testimonials {
-  color: red;
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+
+  @media screen and (min-width:1041px) {
+    padding-top: 115px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  &__title {
+    max-width: 265px;
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #171B1B;
+
+    @media screen and (min-width:1041px) {
+      max-width: 620px;
+      padding-top: 18px;
+      order: -1;
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 55px;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 0;
+      order: -2;
+      font-size: 16px;
+    }
+
+  }
+
+  &__row {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 55px;
+
+    &handler {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+
+    &elem {
+      position: relative;
+      width: 100%;
+      max-width: 384px;
+      transition: 0.3s all ease-out;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #F5AE5C;
+        transform: scale(1.08);
+
+        .Testimonials__rowelemstarselem path {
+          fill: #F5D3AB;
+        }
+
+        .Features__rowelempicture {
+          opacity: 1;
+        }
+      }
+
+      &content {
+        padding: 48px 32px 47px 32px;
+      }
+
+      &img {
+        position: absolute;
+        top: 32px;
+        right: 46px;
+        width: 102px;
+        height: 102px;
+      }
+
+      &stars {
+        display: flex;
+
+        &elem {}
+      }
+
+      &title {
+        padding-top: 61px;
+        max-width: 35%;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #171B1B;
+      }
+
+      &text {
+        padding-top: 22px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(51, 51, 51, 0.496405);
+      }
+    }
+
+    @media screen and (min-width:1041px) {
+      padding-top: 53px;
+    }
+
+  }
+
 }
