@@ -1,1 +1,187 @@
-.Process {}
+.Process {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  @media screen and (min-width:1041px) {
+    padding-top: 105px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 18px;
+      order: -1;
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 0px;
+      order: -2;
+      font-size: 16px;
+    }
+
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 53px;
+    margin-right: 53px;
+
+    @media screen and (min-width:1041px) {
+      margin-top: 70px;
+    }
+
+    &elem {
+      min-width: 284px;
+      min-height: 329px;
+      margin-top: 34px;
+      position: relative;
+      transition: 0.4s all ease;
+      background: white;
+
+      @media screen and (min-width:1041px) {
+        margin-top: 0px;
+        min-width: 284px;
+        min-height: 384px;
+      }
+
+      &:hover {
+        z-index: 10000;
+        cursor: pointer;
+        background-color: #F5AE5C;
+        transform: scale(1.08);
+
+        .Process__rowelemicon path {
+          fill: white;
+        }
+
+        .Process__rowelempicture {
+          opacity: 1;
+        }
+      }
+
+      &content {
+        padding-top: 41px;
+        padding-right: 47px;
+        padding-left: 33px;
+
+        @media screen and (min-width:1041px) {
+          padding-top: 56px;
+          padding-right: 37px;
+          padding-left: 64px;
+        }
+      }
+
+      &icon {
+        width: 72px;
+        height: 55px;
+
+        @media screen and (min-width:1041px) {
+          width: 102px;
+          height: 87px;
+        }
+      }
+
+      &icon path {
+        transition: 0.4s all ease;
+        fill: #F5AE5C;
+      }
+
+      &counter {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      &title {
+        font-family: 'Ultra';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 48px;
+        color: #000000;
+        padding-top: 20px;
+
+        @media screen and (min-width:1041px) {
+          padding-top: 90px;
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      &text {
+        padding-top: 40px;
+        padding-bottom: 56px;
+        max-width: 150px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 32px;
+        color: rgba(51, 51, 51, 0.496405);
+
+        @media screen and (min-width:1041px) {
+          padding-top: 18px;
+          font-size: 16px;
+          line-height: 32px;
+          max-width: 204px;
+        }
+      }
+
+      &picture {
+        transition: 0.3s all ease;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        width: 123px;
+        height: 117px;
+
+        @media screen and (min-width:1041px) {
+          width: 158px;
+          height: 147px;
+        }
+      }
+
+    }
+  }
+
+}
