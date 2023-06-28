@@ -3,6 +3,8 @@ import AnimationComponent from './../AnimationComponent/AnimationComponent';
 import img from '../../assets/img/GetInTouch-img.webp'
 import imgzipped from '../../assets/img/GetInTouch-imgzipped.webp'
 import bgimg1 from '../../assets/img/GetInTouch-bgimg1.webp'
+import bgimg2 from '../../assets/img/GetInTouch-bgimg2.webp'
+import bgimg3 from '../../assets/img/GetInTouch-bgimg3.webp'
 import AddressIcon from '../../assets/icons/GetInTouch-icon1.svg'
 import PhoneIcon from '../../assets/icons/GetInTouch-icon2.svg'
 
@@ -26,7 +28,12 @@ function GetInTouch() {
 
       <div className="GetInTouch__container">
 
-        <img className="GetInTouch__img_desktop" src={img} alt="" />
+        <div style={{ position: 'relative' }}>
+          <img className="GetInTouch__img_desktop" src={img} alt="" />
+          <img className="GetInTouch__img_bg1" src={bgimg1} alt="" />
+          <img className="GetInTouch__img_bg2" src={bgimg2} alt="" />
+          <img className="GetInTouch__img_bg3" src={bgimg3} alt="" />
+        </div>
 
         <div className="GetInTouch__rightside">
 
