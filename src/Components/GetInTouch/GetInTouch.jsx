@@ -28,12 +28,20 @@ function GetInTouch() {
 
       <div className="GetInTouch__container">
 
-        <div style={{ position: 'relative' }}>
-          <img className="GetInTouch__img_desktop" src={img} alt="" />
-          <img className="GetInTouch__img_bg1" src={bgimg1} alt="" />
-          <img className="GetInTouch__img_bg2" src={bgimg2} alt="" />
-          <img className="GetInTouch__img_bg3" src={bgimg3} alt="" />
-        </div>
+        <AnimationComponent
+          transition={1.3}
+          threshold={0.65}
+          triggerOnce={true}
+          moveAnimation={{ bottom: { from: 25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+        >
+          <div style={{ position: 'relative' }}>
+            <img className="GetInTouch__img_desktop" src={img} alt="" />
+            <img className="GetInTouch__img_bg1" src={bgimg1} alt="" />
+            <img className="GetInTouch__img_bg2" src={bgimg2} alt="" />
+            <img className="GetInTouch__img_bg3" src={bgimg3} alt="" />
+          </div>
+        </AnimationComponent>
 
         <div className="GetInTouch__rightside">
 
@@ -52,8 +60,7 @@ function GetInTouch() {
 
           <AnimationComponent
             className={"GetInTouch__subtitle"}
-            transitionDelay={0.8}
-
+            transitionDelay={0.6}
             transition={1.3}
             triggerOnce={true}
             moveAnimation={{ bottom: { from: 25, to: 0 } }}
@@ -71,7 +78,7 @@ function GetInTouch() {
             triggerOnce={true}
             moveAnimation={{ bottom: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            preloadComponent={imgzipped}
+            preloadComponent={<img src={imgzipped} />}
           >
             <img src={img} alt="" />
           </AnimationComponent>
@@ -81,9 +88,10 @@ function GetInTouch() {
             <AnimationComponent
               className={"GetInTouch__contactselem"}
               transition={1.3}
+              transitionDelay={1.4}
               threshold={0.65}
               triggerOnce={true}
-              moveAnimation={{ left: { from: 25, to: 0 } }}
+              moveAnimation={{ bottom: { from: 25, to: 0 } }}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
               <ContactElem
@@ -97,10 +105,10 @@ function GetInTouch() {
             <AnimationComponent
               className={"GetInTouch__contactselem"}
               transition={1.3}
-              transitionDelay={0.8}
+              transitionDelay={1.9}
               threshold={0.65}
               triggerOnce={true}
-              moveAnimation={{ left: { from: 25, to: 0 } }}
+              moveAnimation={{ bottom: { from: 25, to: 0 } }}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
               <ContactElem
@@ -113,7 +121,16 @@ function GetInTouch() {
 
           </div>
 
-          <div className="GetInTouch__button">CONTACT US</div>
+          <AnimationComponent
+            transition={1.3}
+            transitionDelay={2.2}
+            threshold={0.65}
+            triggerOnce={true}
+            moveAnimation={{ bottom: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <div className="GetInTouch__button">CONTACT US</div>
+          </AnimationComponent>
 
         </div>
 
