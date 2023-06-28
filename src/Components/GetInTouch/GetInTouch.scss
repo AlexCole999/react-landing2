@@ -1,3 +1,114 @@
 .GetInTouch {
-  color: red;
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  @media screen and (min-width:1041px) {
+    padding-top: 105px;
+  }
+
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  &__rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: #171B1B;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Ultra';
+    line-height: 34px;
+    max-width: 118px;
+
+    @media screen and (min-width:1041px) {
+      max-width: 300px;
+      padding-top: 18px;
+      order: -1;
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 30px;
+    text-align: center;
+    color: #171B1B;
+    font-size: 16px;
+    font-family: 'Oswald';
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 0px;
+      order: -2;
+      font-size: 16px;
+    }
+
+  }
+
+  &__contacts {
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 34px;
+
+    @media screen and (min-width:1041px) {
+      flex-direction: row;
+      column-gap: 72px;
+    }
+
+    &elem {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 52px;
+
+      &icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      &description {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &counter {
+        color: #171B1B;
+        font-size: 16px;
+        font-family: 'Oswald';
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      &title {
+        padding-top: 12px;
+        color: #171B1B;
+        font-size: 24px;
+        font-family: 'Oswald';
+        line-height: 32px;
+      }
+
+      &text {
+        max-width: 150px;
+        padding-top: 22px;
+        color: rgba(51, 51, 51, 0.50);
+        font-size: 16px;
+        font-family: 'DM Sans';
+        line-height: 32px;
+      }
+
+    }
+
+  }
+
 }
