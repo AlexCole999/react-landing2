@@ -26,6 +26,8 @@ function GetInTouch() {
 
       <div className="GetInTouch__container">
 
+        <img className="GetInTouch__img_desktop" src={img} alt="" />
+
         <div className="GetInTouch__rightside">
 
           <AnimationComponent
@@ -68,6 +70,7 @@ function GetInTouch() {
           </AnimationComponent>
 
           <div className="GetInTouch__contacts">
+
             <AnimationComponent
               className={"GetInTouch__contactselem"}
               transition={1.3}
@@ -83,6 +86,7 @@ function GetInTouch() {
                 text={'764 Richardson Rd. Bethpage, NY 11714'}
               />
             </AnimationComponent>
+
             <AnimationComponent
               className={"GetInTouch__contactselem"}
               transition={1.3}
@@ -99,7 +103,10 @@ function GetInTouch() {
                 text={'+1 (234) 567-89-02'}
               />
             </AnimationComponent>
+
           </div>
+
+          <div className="GetInTouch__button">CONTACT US</div>
 
         </div>
 
