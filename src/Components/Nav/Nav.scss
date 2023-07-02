@@ -1,6 +1,10 @@
 .Nav {
+  width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10000;
 
   &__container {
     width: 1440px;
