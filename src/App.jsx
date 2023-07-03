@@ -12,6 +12,8 @@ const Baker = lazy(() => import('./Components/Baker/Baker'))
 const Testimonials = lazy(() => import('./Components/Testimonials/Testimonials'))
 const GetInTouch = lazy(() => import('./Components/GetInTouch/GetInTouch'))
 const Footer = lazy(() => import('./Components/Footer/Footer'))
+const Recipes = lazy(() => import('./Components/Recipes/Recipes'))
+
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
         <Features />
         <Products />
         <Process />
+        <Recipes />
         <Baker />
         <Testimonials />
         <GetInTouch />

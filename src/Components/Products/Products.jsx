@@ -191,8 +191,10 @@ function Products() {
         <div className="Products__buttonwrapper">
           <AnimationComponent
             transition={1}
+            transitionDelay={1}
             threshold={0.65}
             triggerOnce={true}
+            moveAnimation={{ bottom: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
           >
             <div className="Products__button">EXPLORE</div>
