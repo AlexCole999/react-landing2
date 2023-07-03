@@ -7,8 +7,6 @@
   @media screen and (min-width:1041px) {
     padding-top: 105px;
     padding-bottom: 112px;
-    justify-content: flex-start;
-    padding-left: 134px;
   }
 
   &__container {
@@ -20,6 +18,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width:1341px) {
+      padding-left: 135px;
+    }
 
     @media screen and (min-width:1041px) {
       align-items: start;
@@ -64,12 +66,20 @@
   }
 
   &__cards {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
     padding-top: 30px;
 
-    @media screen and (min-width:1041px) {
+    @media screen and (min-width:1341px) {
       padding-top: 69px;
+      flex-direction: row;
+      align-items: stretch;
     }
 
     &elem {
@@ -168,7 +178,87 @@
         }
       }
 
-      &small {}
+      &small {
+        &img {
+          width: 330px;
+          height: 270px;
+
+          @media screen and (min-width:1041px) {
+            width: 370px;
+            height: 304px;
+          }
+        }
+
+        &description {
+          padding: 26px 32px 35px 32px;
+        }
+
+        &type {
+          color: #171B1B;
+          font-size: 16px;
+          font-family: Oswald;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+
+        &lastrow {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &title {
+          color: #171B1B;
+          font-size: 24px;
+          font-family: Oswald;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+
+        &price {
+          color: #171B1B;
+          text-align: right;
+          font-size: 40px;
+          font-family: Ultra;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__button {
+    cursor: pointer;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 48px;
+    color: #171B1B;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid rgba(23, 27, 27, 0.24);
+
+    @media screen and (min-width:1041px) {
+      margin-top: 64px;
+    }
+
+    &wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 
