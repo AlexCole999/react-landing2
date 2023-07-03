@@ -1,6 +1,6 @@
 import './Products.scss'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
-import img1 from '../../assets/img/Products-img1.png'
+import img1 from '../../assets/img/Products-img1.webp'
 
 function Products() {
 
