@@ -28,7 +28,7 @@ function GetInTouch() {
 
       <div className="GetInTouch__container">
 
-        <AnimationComponent
+        {/* <AnimationComponent
           transition={1.3}
           threshold={0.65}
           triggerOnce={true}
@@ -41,7 +41,7 @@ function GetInTouch() {
             <img className="GetInTouch__img_bg2" src={bgimg2} alt="" />
             <img className="GetInTouch__img_bg3" src={bgimg3} alt="" />
           </div>
-        </AnimationComponent>
+        </AnimationComponent> */}
 
         <div className="GetInTouch__rightside">
 
@@ -71,7 +71,7 @@ function GetInTouch() {
             </div>
           </AnimationComponent>
 
-          <AnimationComponent
+          {/* <AnimationComponent
             className={"GetInTouch__img_mobile"}
             transition={1.3}
             threshold={0.85}
@@ -81,7 +81,7 @@ function GetInTouch() {
             preloadComponent={<img src={imgzipped} alt="" />}
           >
             <img src={img} alt="" />
-          </AnimationComponent>
+          </AnimationComponent> */}
 
           <div className="GetInTouch__contacts">
 
