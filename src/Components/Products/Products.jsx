@@ -43,7 +43,7 @@ function CardBig({ img1 }) {
             <div className="Products__cardselembigtext">Flows by their place and supplies it with the necessary regelialia.</div>
           </AnimationComponent>
           <AnimationComponent
-            transition={1}
+            transition={0.7}
             transitionDelay={1.6}
             threshold={0.65}
             triggerOnce={true}
@@ -85,7 +85,7 @@ function CardSmall({ img2, type, title, price }) {
             <div className="Products__cardselemsmalltitle">{title}</div>
           </AnimationComponent>
           <AnimationComponent
-            transition={1}
+            transition={0.7}
             transitionDelay={1.2}
             threshold={0.65}
             triggerOnce={true}
