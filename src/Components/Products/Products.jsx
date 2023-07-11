@@ -43,11 +43,11 @@ function CardBig({ img1 }) {
             <div className="Products__cardselembigtext">Flows by their place and supplies it with the necessary regelialia.</div>
           </AnimationComponent>
           <AnimationComponent
-            transition={0.7}
+            transition={1}
             transitionDelay={1.6}
             threshold={0.65}
             triggerOnce={true}
-            moveAnimation={{ right: { from: 35, to: 0 } }}
+            moveAnimation={{ right: { from: 15, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
           >
             <div className="Products__cardselembigprice">$9</div>
@@ -85,11 +85,11 @@ function CardSmall({ img2, type, title, price }) {
             <div className="Products__cardselemsmalltitle">{title}</div>
           </AnimationComponent>
           <AnimationComponent
-            transition={0.7}
+            transition={1}
             transitionDelay={1.2}
             threshold={0.65}
             triggerOnce={true}
-            moveAnimation={{ right: { from: 35, to: 0 } }}
+            moveAnimation={{ right: { from: 15, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
           >
             <div className="Products__cardselemsmallprice">{price}</div>
