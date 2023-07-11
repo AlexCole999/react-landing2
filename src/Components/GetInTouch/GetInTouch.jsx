@@ -78,7 +78,7 @@ function GetInTouch() {
             triggerOnce={true}
             moveAnimation={{ bottom: { from: 25, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
-            preloadComponent={<img src={imgzipped} />}
+            preloadComponent={<img src={imgzipped} alt="" />}
           >
             <img src={img} alt="" />
           </AnimationComponent>
