@@ -4,7 +4,7 @@ import img2 from '../../assets/img/Testimonials-img2.webp'
 import img3 from '../../assets/img/Testimonials-img3.webp'
 import AnimationComponent from './../AnimationComponent/AnimationComponent';
 import { ReactComponent as Star } from '../../assets/icons/star.svg'
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 function RowElem({ img, title, text }) {
   return (
@@ -29,7 +29,10 @@ function RowElem({ img, title, text }) {
 
 function Testimonials() {
 
+  const carousel = useRef();
   const [counter, setCounter] = useState(1)
+  let mouseButtonIsPressed = false
+  let mouseStartCoordinates;
 
   return (
     <div className="Testimonials">
@@ -59,7 +62,26 @@ function Testimonials() {
 
         <div className="Testimonials__row">
 
-          <div className="Testimonials__rowcontainer"
+          <div
+            className="Testimonials__rowcontainer"
+            ref={carousel}
+            onMouseDown={(e) => {
+              mouseButtonIsPressed = true
+              mouseStartCoordinates = e.clientX
+            }}
+            onMouseUp={() => {
+              mouseButtonIsPressed = false
+            }}
+            onMouseMove={(e) => {
+              if (mouseButtonIsPressed) {
+                if (mouseStartCoordinates > e.clientX) {
+                  if (counter < 3) { setCounter(counter => counter + 1) }
+                }
+                if (mouseStartCoordinates < e.clientX) {
+                  if (counter > 1) { setCounter(counter => counter - 1) }
+                }
+              }
+            }}
             style={{ transform: `translateX(-${(counter - 1) * 384}px)` }}
           >
 
@@ -121,7 +143,7 @@ function Testimonials() {
               <div
                 key={elem}
                 className='Testimonials__rowcarouselelem'
-                onClick={() => { console.log(elem, counter, counter == elem); setCounter(elem) }}
+                onClick={() => { setCounter(elem) }}
                 style={{
                   transform: counter == elem ? 'scale(1.5)' : null,
                   backgroundColor: counter == elem ? '#171B1B' : '#9EAD8D'
