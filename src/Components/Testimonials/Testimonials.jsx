@@ -29,7 +29,6 @@ function RowElem({ img, title, text }) {
 
 function Testimonials() {
 
-  const carousel = useRef();
   const [counter, setCounter] = useState(1)
   let mouseButtonIsPressed = false
   let mouseStartCoordinates;
@@ -64,7 +63,6 @@ function Testimonials() {
 
           <div
             className="Testimonials__rowcontainer"
-            ref={carousel}
             onMouseDown={(e) => {
               mouseButtonIsPressed = true
               mouseStartCoordinates = e.clientX
