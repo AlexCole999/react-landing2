@@ -31,7 +31,7 @@ function Testimonials() {
 
   const [counter, setCounter] = useState(1)
   let mouseButtonIsPressed = false
-  let mouseStartCoordinates;
+  let mouseButtonPressedCoordinates;
 
   return (
     <div className="Testimonials">
@@ -65,17 +65,17 @@ function Testimonials() {
             className="Testimonials__rowcontainer"
             onMouseDown={(e) => {
               mouseButtonIsPressed = true
-              mouseStartCoordinates = e.clientX
+              mouseButtonPressedCoordinates = e.clientX
             }}
             onMouseUp={() => {
               mouseButtonIsPressed = false
             }}
             onMouseMove={(e) => {
               if (mouseButtonIsPressed) {
-                if (mouseStartCoordinates > e.clientX) {
+                if (mouseButtonPressedCoordinates > e.clientX) {
                   if (counter < 3) { setCounter(counter => counter + 1) }
                 }
-                if (mouseStartCoordinates < e.clientX) {
+                if (mouseButtonPressedCoordinates < e.clientX) {
                   if (counter > 1) { setCounter(counter => counter - 1) }
                 }
               }
@@ -143,6 +143,7 @@ function Testimonials() {
                 className='Testimonials__rowcarouselelem'
                 onClick={() => { setCounter(elem) }}
                 style={{
+                  transition: '0.6s all ease',
                   transform: counter == elem ? 'scale(1.5)' : null,
                   backgroundColor: counter == elem ? '#171B1B' : '#9EAD8D'
                 }}>
