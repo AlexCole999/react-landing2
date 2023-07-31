@@ -148,45 +148,49 @@ function Recipes() {
             <CardBig img1={img1} />
           </AnimationComponent>
 
-          <AnimationComponent
-            transition={1}
-            transitionDelay={0.3}
-            threshold={0.65}
-            triggerOnce={true}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <CardSmall img2={img2} type="Bakery" title="Bread" price="$5" />
-          </AnimationComponent>
+          <div className="Recipes__cardsrow">
 
-          <AnimationComponent
-            transition={1}
-            transitionDelay={0.6}
-            threshold={0}
-            triggerOnce={true}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <CardSmall img2={img3} type="PASTRY" title="Cupcake" price="$3" />
-          </AnimationComponent>
+            <AnimationComponent
+              transition={1}
+              transitionDelay={0.3}
+              threshold={0.65}
+              triggerOnce={true}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <CardSmall img2={img2} type="Bakery" title="Bread" price="$5" />
+            </AnimationComponent>
 
-          <AnimationComponent
-            transition={1}
-            transitionDelay={0.9}
-            threshold={0}
-            triggerOnce={true}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <CardSmall img2={img4} type="SWEET" title="Biscuits" price="$2" />
-          </AnimationComponent>
+            <AnimationComponent
+              transition={1}
+              transitionDelay={0.6}
+              threshold={0}
+              triggerOnce={true}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <CardSmall img2={img3} type="PASTRY" title="Cupcake" price="$3" />
+            </AnimationComponent>
 
-          <AnimationComponent
-            transition={1}
-            transitionDelay={1.2}
-            threshold={0}
-            triggerOnce={true}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <CardSmall img2={img5} type="PASTRY" title="Brioche" price="$5" />
-          </AnimationComponent>
+            <AnimationComponent
+              transition={1}
+              transitionDelay={0.9}
+              threshold={0}
+              triggerOnce={true}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <CardSmall img2={img4} type="SWEET" title="Biscuits" price="$2" />
+            </AnimationComponent>
+
+            <AnimationComponent
+              transition={1}
+              transitionDelay={1.2}
+              threshold={0}
+              triggerOnce={true}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <CardSmall img2={img5} type="PASTRY" title="Brioche" price="$5" />
+            </AnimationComponent>
+          </div>
+
         </div>
 
         <div className="Recipes__buttonwrapper">
