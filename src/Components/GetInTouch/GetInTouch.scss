@@ -212,7 +212,14 @@
   }
 
   &__button {
+    &:hover {
+      background-color: black;
+      color: white;
+      transform: scale(1.1);
+    }
+
     cursor: pointer;
+    transition: 0.3s all ease-out;
     margin-top: 34px;
     display: flex;
     align-items: center;
