@@ -1,10 +1,42 @@
 import './Baker.scss'
+import bakerImg from '../../assets/img/Baker-img1.webp'
+import arrowMobileIcon from '../../assets/icons/Baker-arrowmobileicon.svg'
 
 function Baker() {
 
   return (
     <div className="Baker">
-      Baker
+      <div className="Baker__container">
+        <div className="Baker__sideleft">
+          <div className="Baker__title">
+            Meet Our Professional Baker
+          </div>
+          <div className="Baker__subtitle">
+            Our Baker
+          </div>
+          <img className="Baker__img_mobile" src={bakerImg} alt="" />
+          <div className="Baker__carousel_desktop"></div>
+        </div>
+        <div className="Baker__sideright">
+          <img className="Baker__img_desktop" src={bakerImg} alt="" />
+          <div className="Baker__carousel_mobile">
+            <div className="Baker__carousel_mobilenav">
+              <div className="Baker__carousel_mobilenavtitle">Stina Gunnarsdottir</div>
+              <div className="Baker__carousel_mobilenavbuttons">
+                <div className="Baker__carousel_mobilenavbuttonsleft">
+                  <img src={arrowMobileIcon} alt="" />
+                </div>
+                <div className="Baker__carousel_mobilenavbuttonsright">
+                  <img src={arrowMobileIcon} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="Baker__carousel_mobiletext">
+              She packed her seven versalia, put her initial into the belt and made herself on the way.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
