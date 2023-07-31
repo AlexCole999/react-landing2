@@ -33,6 +33,7 @@
      }
 
      &right {
+       position: relative;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -85,7 +86,44 @@
      }
 
      &_desktop {
+       z-index: 10000;
        display: none;
+
+       &bg1 {
+         display: none;
+         position: absolute;
+         top: -30px;
+         left: 140px;
+
+         @media screen and (min-width:1041px) {
+           display: block;
+         }
+       }
+
+       &bg2 {
+         display: none;
+         z-index: 9999;
+         position: absolute;
+         top: 151px;
+         left: -78px;
+
+         @media screen and (min-width:1041px) {
+           display: block;
+         }
+       }
+
+       &bg3 {
+         display: none;
+         width: 512px;
+         height: 540px;
+         position: absolute;
+         top: 130px;
+         left: -58px;
+
+         @media screen and (min-width:1041px) {
+           display: block;
+         }
+       }
 
        @media screen and (min-width:1041px) {
          display: block;

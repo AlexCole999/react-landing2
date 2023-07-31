@@ -1,5 +1,8 @@
 import './Baker.scss'
 import bakerImg from '../../assets/img/Baker-img1.webp'
+import bgImg1 from '../../assets/img/Baker-bgImg1.webp'
+import bgImg2 from '../../assets/img/Baker-bgImg2.webp'
+import bgImg3 from '../../assets/img/Baker-bgImg3.webp'
 import arrowMobileIcon from '../../assets/icons/Baker-arrowmobileicon.svg'
 
 function Baker() {
@@ -37,6 +40,9 @@ function Baker() {
         </div>
         <div className="Baker__sideright">
           <img className="Baker__img_desktop" src={bakerImg} alt="" />
+          <img className="Baker__img_desktopbg1" src={bgImg1} alt="" />
+          <img className="Baker__img_desktopbg2" src={bgImg2} alt="" />
+          <img className="Baker__img_desktopbg3" src={bgImg3} alt="" />
           <div className="Baker__carousel_mobile">
             <div className="Baker__carousel_mobilenav">
               <div className="Baker__carousel_mobilenavtitle">Stina Gunnarsdottir</div>
