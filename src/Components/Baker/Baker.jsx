@@ -15,7 +15,25 @@ function Baker() {
             Our Baker
           </div>
           <img className="Baker__img_mobile" src={bakerImg} alt="" />
-          <div className="Baker__carousel_desktop"></div>
+          <div className="Baker__carousel_desktop">
+            <div className="Baker__carousel_desktopnav">
+              <div className="Baker__carousel_desktopnavbuttons">
+                <div className="Baker__carousel_desktopnavbuttonsup">
+                  <img src={arrowMobileIcon} alt="" />
+                </div>
+                <div className="Baker__carousel_desktopnavbuttonsdown">
+                  <img src={arrowMobileIcon} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="Baker__carousel_desktopdescription">
+              <div className="Baker__carousel_desktoptitle">Baker</div>
+              <div className="Baker__carousel_desktopnameselected">Stina Gunnarsdottir</div>
+              <div className="Baker__carousel_desktoptext">She packed her seven versalia, put her initial into the belt and made herself on the way.</div>
+              <div className="Baker__carousel_desktopname">Jaquon Hart</div>
+              <div className="Baker__carousel_desktopname">Oluchi Mazi</div>
+            </div>
+          </div>
         </div>
         <div className="Baker__sideright">
           <img className="Baker__img_desktop" src={bakerImg} alt="" />
