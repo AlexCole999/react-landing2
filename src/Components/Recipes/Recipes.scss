@@ -82,16 +82,21 @@
       max-width: 580px;
       display: flex;
       flex-wrap: wrap;
-      row-gap: 34px;
-      column-gap: 25px;
+      row-gap: 32px;
+      column-gap: 30px;
       justify-content: flex-start;
       justify-content: center;
     }
 
     &elem {
       &big {
-        position: relative;
+        transition: 0.3s all ease-out;
         background-color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.05);
+        }
 
         &img {
           width: 100%;
@@ -145,7 +150,6 @@
           }
 
           @media screen and (min-width:1041px) {
-            max-width: 300px;
             font-size: 40px;
             line-height: 48px;
           }
@@ -185,7 +189,14 @@
       }
 
       &small {
+        transition: 0.3s all ease-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
         background-color: #fff;
+        cursor: pointer;
 
         &img {
           width: 322px;
@@ -198,7 +209,7 @@
         }
 
         &description {
-          padding: 26px 32px 35px 32px;
+          padding: 13px 34px 33px 34px;
 
           @media screen and (min-width:1041px) {
             padding: 11px 32px 26px 32px;
@@ -206,40 +217,49 @@
 
         }
 
-        &type {
-          color: #171B1B;
-          font-size: 16px;
-          font-family: Oswald;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 32px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-        }
-
-        &lastrow {
+        &firstrow {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
 
-        &title {
-          color: #171B1B;
-          font-size: 24px;
-          font-family: Oswald;
+        &type {
+          width: 59.63px;
+          height: 38.091px;
+          flex-shrink: 0;
+          color: rgba(51, 51, 51, 0.50);
+          font-family: DM Sans;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 32px;
         }
 
-        &price {
-          color: #171B1B;
+        &time {
+          display: flex;
+          column-gap: 6px;
+          color: #000;
           text-align: right;
-          font-size: 40px;
-          font-family: Ultra;
+          font-family: DM Sans;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
-          line-height: 48px;
+          line-height: 32px;
+        }
+
+        &title {
+          padding-top: 14px;
+          color: #000;
+          font-family: DM Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          max-width: 200px;
+
+          @media screen and (min-width:1041px) {
+            padding-top: 0px;
+          }
         }
 
       }

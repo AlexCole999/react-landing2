@@ -5,6 +5,8 @@ import img2 from '../../assets/img/Recipes-img2.webp'
 import img3 from '../../assets/img/Recipes-img3.webp'
 import img4 from '../../assets/img/Recipes-img4.webp'
 import img5 from '../../assets/img/Recipes-img5.webp'
+import timerIcon from '../../assets/icons/watchesIcon.svg'
+
 
 function CardBig({ img1 }) {
   return (
@@ -58,7 +60,7 @@ function CardBig({ img1 }) {
   )
 }
 
-function CardSmall({ img2, type, title, price }) {
+function CardSmall({ img2, type, title, time }) {
   return (
     <div className="Recipes__cardselemsmall">
       <img className="Recipes__cardselemsmallimg" src={img2} alt="" />
@@ -71,30 +73,33 @@ function CardSmall({ img2, type, title, price }) {
           moveAnimation={{ left: { from: 35, to: 0 } }}
           opacityAnimation={{ from: 0.01, to: 1 }}
         >
-          <div className="Recipes__cardselemsmalltype">{type}</div>
+          <div className="Recipes__cardselemsmallfirstrow">
+            <AnimationComponent
+              transition={0.7}
+              transitionDelay={0.8}
+              threshold={0.65}
+              triggerOnce={true}
+              moveAnimation={{ left: { from: 35, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <div className="Recipes__cardselemsmalltype">{type}</div>
+            </AnimationComponent>
+            <AnimationComponent
+              transition={0.7}
+              transitionDelay={1.2}
+              threshold={0.65}
+              triggerOnce={true}
+              moveAnimation={{ right: { from: 15, to: 0 } }}
+              opacityAnimation={{ from: 0.01, to: 1 }}
+            >
+              <div className="Recipes__cardselemsmalltime">
+                <img src={timerIcon} alt="" />
+                {time}
+              </div>
+            </AnimationComponent>
+          </div>
+          <div className="Recipes__cardselemsmalltitle">{title}</div>
         </AnimationComponent>
-        <div className="Recipes__cardselemsmalllastrow">
-          <AnimationComponent
-            transition={0.7}
-            transitionDelay={0.8}
-            threshold={0.65}
-            triggerOnce={true}
-            moveAnimation={{ left: { from: 35, to: 0 } }}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <div className="Recipes__cardselemsmalltitle">{title}</div>
-          </AnimationComponent>
-          <AnimationComponent
-            transition={0.7}
-            transitionDelay={1.2}
-            threshold={0.65}
-            triggerOnce={true}
-            moveAnimation={{ right: { from: 15, to: 0 } }}
-            opacityAnimation={{ from: 0.01, to: 1 }}
-          >
-            <div className="Recipes__cardselemsmallprice">{price}</div>
-          </AnimationComponent>
-        </div>
       </div>
     </div>
   )
@@ -157,7 +162,7 @@ function Recipes() {
               triggerOnce={true}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
-              <CardSmall img2={img2} type="Bakery" title="Bread" price="$5" />
+              <CardSmall img2={img2} type="Bakery" title="Malted wheat flake bread" time="10 min" />
             </AnimationComponent>
 
             <AnimationComponent
@@ -167,7 +172,7 @@ function Recipes() {
               triggerOnce={true}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
-              <CardSmall img2={img3} type="PASTRY" title="Cupcake" price="$3" />
+              <CardSmall img2={img3} type="Bakery" title="Biscoff cake with lotus biscuits" time="7 min" />
             </AnimationComponent>
 
             <AnimationComponent
@@ -177,7 +182,7 @@ function Recipes() {
               triggerOnce={true}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
-              <CardSmall img2={img4} type="SWEET" title="Biscuits" price="$2" />
+              <CardSmall img2={img4} type="Bakery" title="Peanut butter and chocolate cake" time="5 min" />
             </AnimationComponent>
 
             <AnimationComponent
@@ -187,7 +192,7 @@ function Recipes() {
               triggerOnce={true}
               opacityAnimation={{ from: 0.01, to: 1 }}
             >
-              <CardSmall img2={img5} type="PASTRY" title="Brioche" price="$5" />
+              <CardSmall img2={img5} type="Bakery" title="Malted wheat flake bread" time="15 min" />
             </AnimationComponent>
           </div>
 
