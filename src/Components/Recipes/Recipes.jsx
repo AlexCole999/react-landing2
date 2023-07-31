@@ -52,7 +52,10 @@ function CardBig({ img1 }) {
             moveAnimation={{ right: { from: 15, to: 0 } }}
             opacityAnimation={{ from: 0.01, to: 1 }}
           >
-            <div className="Recipes__cardselembigtime">5 min</div>
+            <div className="Recipes__cardselembigtime">
+              <img className="Recipes__cardselembigtimeicon" src={timerIcon} alt="" />
+              5 min
+            </div>
           </AnimationComponent>
         </div>
       </div>
