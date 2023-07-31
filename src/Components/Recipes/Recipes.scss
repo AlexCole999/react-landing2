@@ -1,3 +1,263 @@
 .Recipes {
-  color: red
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 35px;
+  background-color: #171B1B;
+
+  @media screen and (min-width:1041px) {
+    padding-top: 105px;
+    padding-bottom: 112px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1341px) {
+      padding-left: 135px;
+    }
+
+    @media screen and (min-width:1041px) {
+      align-items: start;
+    }
+
+    &title {
+      color: #FFF;
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Ultra';
+      line-height: 34px;
+      max-width: 254px;
+
+      @media screen and (min-width:1041px) {
+        max-width: 520px;
+        text-align: left;
+        padding-top: 18px;
+        order: -1;
+        font-size: 56px;
+        line-height: 64px;
+      }
+    }
+
+    &subtitle {
+      padding-top: 30px;
+      text-align: center;
+      color: #FFF;
+      font-size: 16px;
+      font-family: 'Oswald';
+      line-height: 32px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      @media screen and (min-width:1041px) {
+        padding-top: 0px;
+        order: -2;
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+  &__cards {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding-top: 70px;
+
+    @media screen and (min-width:1341px) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    &elem {
+      &big {
+        position: relative;
+        background-color: #fff;
+
+        &img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &description {
+          padding: 24px 34px 30px 28px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          @media screen and (min-width:450px) {
+            justify-content: flex-end;
+          }
+
+          @media screen and (min-width:1041px) {
+            padding: 25px 48px 33px 48px;
+          }
+        }
+
+        &subtitle {
+          color: #000;
+          font-family: Oswald;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18.5px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+
+          @media screen and (min-width:450px) {
+            padding-bottom: 16px;
+          }
+        }
+
+        &title {
+          color: #000;
+          font-family: Ultra;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+
+          @media screen and (min-width:450px) {
+            padding-bottom: 18px;
+          }
+
+          @media screen and (min-width:1041px) {
+            max-width: 300px;
+            font-size: 40px;
+            line-height: 48px;
+          }
+        }
+
+        &lastrow {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &text {
+          max-width: 220px;
+          color: rgba(51, 51, 51, 0.50);
+          font-family: DM Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23.5px;
+
+          @media screen and (min-width:1041px) {
+            max-width: 330px;
+            font-size: 16px;
+            line-height: 32px;
+          }
+        }
+
+        &time {
+          color: #000;
+          text-align: center;
+          font-family: Oswald;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+      }
+
+      &small {
+        &img {
+          width: 330px;
+          height: 270px;
+
+          @media screen and (min-width:1041px) {
+            width: 370px;
+            height: 304px;
+          }
+        }
+
+        &description {
+          padding: 26px 32px 35px 32px;
+        }
+
+        &type {
+          color: #171B1B;
+          font-size: 16px;
+          font-family: Oswald;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+
+        &lastrow {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &title {
+          color: #171B1B;
+          font-size: 24px;
+          font-family: Oswald;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+
+        &price {
+          color: #171B1B;
+          text-align: right;
+          font-size: 40px;
+          font-family: Ultra;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__button {
+    cursor: pointer;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 48px;
+    color: #171B1B;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid rgba(23, 27, 27, 0.24);
+
+    @media screen and (min-width:1041px) {
+      margin-top: 64px;
+    }
+
+    &wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
 }
