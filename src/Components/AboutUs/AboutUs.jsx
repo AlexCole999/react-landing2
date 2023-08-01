@@ -4,8 +4,11 @@ import bgImg1 from '../../assets/img/AboutUs-bgImg1.webp'
 import bgImg2 from '../../assets/img/Baker-bgImg2.webp'
 import bgImg3 from '../../assets/img/Baker-bgImg3.webp'
 import arrowMobileIcon from '../../assets/icons/Baker-arrowmobileicon.svg'
+import { useState } from 'react'
 
 function AboutUs() {
+
+  const [counter, setcounter] = useState(1)
 
   return (
     <div className="AboutUs">
@@ -21,21 +24,39 @@ function AboutUs() {
           <div className="AboutUs__carousel_desktop">
             <div className="AboutUs__carousel_desktopnav">
               <div className="AboutUs__carousel_desktopnavbuttons">
-                <div className="AboutUs__carousel_desktopnavbuttonsup">
-                  <img src={arrowMobileIcon} alt="" />
-                </div>
-                <div className="AboutUs__carousel_desktopnavbuttonsdown">
-                  <img src={arrowMobileIcon} alt="" />
-                </div>
+                <img
+                  className="AboutUs__carousel_desktopnavbuttonsup"
+                  src={arrowMobileIcon}
+                  alt=""
+                  onClick={() => { if (counter > 1) { setcounter(counter => counter = counter - 1) } }
+                  }
+                />
+                <img
+                  className="AboutUs__carousel_desktopnavbuttonsdown"
+                  src={arrowMobileIcon}
+                  alt=""
+                  onClick={() => { if (counter < 4) { setcounter(counter => counter = counter + 1) } }}
+                />
               </div>
             </div>
             <div className="AboutUs__carousel_desktopdescription">
-              <div className="AboutUs__carousel_desktopcounter">01</div>
-              <div className="AboutUs__carousel_desktopnameselected">Last view back</div>
-              <div className="AboutUs__carousel_desktoptext">She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
-              <div className="AboutUs__carousel_desktopname">On the skyline</div>
-              <div className="AboutUs__carousel_desktopname">Pityful a rethoric</div>
-              <div className="AboutUs__carousel_desktopname">On her way she</div>
+
+              <div className="AboutUs__carousel_desktopcounter">
+                0{counter}
+              </div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 1 ? 'selected' : null}`}>Last view back</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 2 ? 'selected' : null}`}>On the skyline</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 3 ? 'selected' : null}`}>Pityful a rethoric</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 4 ? 'selected' : null}`}>On her way she</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+
             </div>
           </div>
         </div>
