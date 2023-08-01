@@ -4,6 +4,7 @@ import bgImg1 from '../../assets/img/AboutUs-bgImg1.webp'
 import bgImg2 from '../../assets/img/Baker-bgImg2.webp'
 import bgImg3 from '../../assets/img/Baker-bgImg3.webp'
 import arrowMobileIcon from '../../assets/icons/Baker-arrowmobileicon.svg'
+import AnimationComponent from './../AnimationComponent/AnimationComponent';
 import { useState } from 'react'
 
 function AboutUs() {
@@ -45,17 +46,60 @@ function AboutUs() {
                 0{counter}
               </div>
 
-              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 1 ? 'selected' : null}`}>Last view back</div>
-              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 1 ? 'selected' : ''}`}>Last view back</div>
 
-              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 2 ? 'selected' : null}`}>On the skyline</div>
-              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.3}
+                  threshold={0.65}
+                  triggerOnce={true}
+                  moveAnimation={{ bottom: { from: 25, to: 0 } }}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                </AnimationComponent>
+              </div>
 
-              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 3 ? 'selected' : null}`}>Pityful a rethoric</div>
-              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
 
-              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 4 ? 'selected' : null}`}>On her way she</div>
-              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 2 ? 'selected' : ''}`}>On the skyline</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.3}
+                  threshold={0.65}
+                  triggerOnce={true}
+                  moveAnimation={{ right: { from: 25, to: 0 } }}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                </AnimationComponent>
+              </div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 3 ? 'selected' : ''}`}>Pityful a rethoric</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.3}
+                  threshold={0.65}
+                  triggerOnce={true}
+                  moveAnimation={{ right: { from: 25, to: 0 } }}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                </AnimationComponent>
+              </div>
+
+              <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 4 ? 'selected' : ''}`}>On her way she</div>
+              <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.3}
+                  threshold={0.65}
+                  triggerOnce={true}
+                  moveAnimation={{ right: { from: 25, to: 0 } }}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                </AnimationComponent>
+              </div>
 
             </div>
           </div>
