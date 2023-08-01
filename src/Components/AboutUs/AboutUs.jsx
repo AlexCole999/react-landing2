@@ -15,14 +15,41 @@ function AboutUs() {
     <div className="AboutUs">
       <div className="AboutUs__container">
         <div className="AboutUs__sideleft">
-          <div className="AboutUs__title">
-            Baking Special Moments
-          </div>
-          <div className="AboutUs__subtitle">
-            About Us
-          </div>
+          <AnimationComponent
+            className="AboutUs__title"
+            transition={1.3}
+            threshold={0.65}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <div>
+              Baking Special Moments
+            </div>
+          </AnimationComponent>
+          <AnimationComponent
+            className="AboutUs__subtitle"
+            transition={1.3}
+            threshold={0.65}
+            transitionDelay={1.2}
+            triggerOnce={true}
+            moveAnimation={{ right: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <div >
+              About Us
+            </div>
+          </AnimationComponent>
           <img className="AboutUs__img_mobile" src={AboutUsImg} alt="" />
-          <div className="AboutUs__carousel_desktop">
+
+          <AnimationComponent
+            className="AboutUs__carousel_desktop"
+            transition={2}
+            threshold={0.65}
+            transitionDelay={1}
+            triggerOnce={true}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
             <div className="AboutUs__carousel_desktopnav">
               <div className="AboutUs__carousel_desktopnavbuttons">
                 <img
@@ -50,10 +77,8 @@ function AboutUs() {
 
               <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>
                 <AnimationComponent
-                  transition={1.3}
+                  transition={0.6}
                   threshold={0.65}
-                  triggerOnce={true}
-                  moveAnimation={{ bottom: { from: 25, to: 0 } }}
                   opacityAnimation={{ from: 0.01, to: 1 }}
                 >
                   She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
@@ -65,10 +90,8 @@ function AboutUs() {
               <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 2 ? 'selected' : ''}`}>On the skyline</div>
               <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>
                 <AnimationComponent
-                  transition={1.3}
+                  transition={0.6}
                   threshold={0.65}
-                  triggerOnce={true}
-                  moveAnimation={{ right: { from: 25, to: 0 } }}
                   opacityAnimation={{ from: 0.01, to: 1 }}
                 >
                   She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
@@ -78,10 +101,8 @@ function AboutUs() {
               <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 3 ? 'selected' : ''}`}>Pityful a rethoric</div>
               <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>
                 <AnimationComponent
-                  transition={1.3}
+                  transition={0.6}
                   threshold={0.65}
-                  triggerOnce={true}
-                  moveAnimation={{ right: { from: 25, to: 0 } }}
                   opacityAnimation={{ from: 0.01, to: 1 }}
                 >
                   She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
@@ -91,10 +112,8 @@ function AboutUs() {
               <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 4 ? 'selected' : ''}`}>On her way she</div>
               <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>
                 <AnimationComponent
-                  transition={1.3}
+                  transition={0.6}
                   threshold={0.65}
-                  triggerOnce={true}
-                  moveAnimation={{ right: { from: 25, to: 0 } }}
                   opacityAnimation={{ from: 0.01, to: 1 }}
                 >
                   She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
@@ -102,32 +121,41 @@ function AboutUs() {
               </div>
 
             </div>
-          </div>
+          </AnimationComponent>
         </div>
-        <div className="AboutUs__sideright">
-          <img className="AboutUs__img_desktop" src={AboutUsImg} alt="" />
-          <img className="AboutUs__img_desktopbg1" src={bgImg1} alt="" />
-          <img className="AboutUs__img_desktopbg2" src={bgImg2} alt="" />
-          <img className="AboutUs__img_desktopbg3" src={bgImg3} alt="" />
-          <div className="AboutUs__carousel_mobile">
-            <div className="AboutUs__carousel_mobilenav">
-              <div className="AboutUs__carousel_mobilenavtitle">
-                Last view back
+        <AnimationComponent
+          transition={1.3}
+          threshold={0.65}
+          transitionDelay={0.6}
+          triggerOnce={true}
+          moveAnimation={{ right: { left: 25, to: 0 } }}
+          opacityAnimation={{ from: 0.01, to: 1 }}
+        >
+          <div className="AboutUs__sideright">
+            <img className="AboutUs__img_desktop" src={AboutUsImg} alt="" />
+            <img className="AboutUs__img_desktopbg1" src={bgImg1} alt="" />
+            <img className="AboutUs__img_desktopbg2" src={bgImg2} alt="" />
+            <img className="AboutUs__img_desktopbg3" src={bgImg3} alt="" />
+            <div className="AboutUs__carousel_mobile">
+              <div className="AboutUs__carousel_mobilenav">
+                <div className="AboutUs__carousel_mobilenavtitle">
+                  Last view back
+                </div>
+                <div className="AboutUs__carousel_mobilenavbuttons">
+                  <div className="AboutUs__carousel_mobilenavbuttonsleft">
+                    <img src={arrowMobileIcon} alt="" />
+                  </div>
+                  <div className="AboutUs__carousel_mobilenavbuttonsright">
+                    <img src={arrowMobileIcon} alt="" />
+                  </div>
+                </div>
               </div>
-              <div className="AboutUs__carousel_mobilenavbuttons">
-                <div className="AboutUs__carousel_mobilenavbuttonsleft">
-                  <img src={arrowMobileIcon} alt="" />
-                </div>
-                <div className="AboutUs__carousel_mobilenavbuttonsright">
-                  <img src={arrowMobileIcon} alt="" />
-                </div>
+              <div className="AboutUs__carousel_mobiletext">
+                She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
               </div>
             </div>
-            <div className="AboutUs__carousel_mobiletext">
-              She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
-            </div>
           </div>
-        </div>
+        </AnimationComponent>
       </div>
     </div>
   )
