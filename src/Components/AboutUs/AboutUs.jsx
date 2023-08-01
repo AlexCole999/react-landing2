@@ -40,7 +40,17 @@ function AboutUs() {
               About Us
             </div>
           </AnimationComponent>
-          <img className="AboutUs__img_mobile" src={AboutUsImg} alt="" />
+
+          <AnimationComponent
+            className="AboutUs__subtitle"
+            transition={1.3}
+            threshold={0.65}
+            triggerOnce={true}
+            moveAnimation={{ bottom: { from: 25, to: 0 } }}
+            opacityAnimation={{ from: 0.01, to: 1 }}
+          >
+            <img className="AboutUs__img_mobile" src={AboutUsImg} alt="" />
+          </AnimationComponent>
 
           <AnimationComponent
             className="AboutUs__carousel_desktop"
@@ -85,8 +95,6 @@ function AboutUs() {
                 </AnimationComponent>
               </div>
 
-
-
               <div className={`AboutUs__carousel_desktopname AboutUs__carousel_desktopname${counter == 2 ? 'selected' : ''}`}>On the skyline</div>
               <div className="AboutUs__carousel_desktoptext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>
                 <AnimationComponent
@@ -123,6 +131,7 @@ function AboutUs() {
             </div>
           </AnimationComponent>
         </div>
+
         <AnimationComponent
           transition={1.3}
           threshold={0.65}
@@ -138,24 +147,115 @@ function AboutUs() {
             <img className="AboutUs__img_desktopbg3" src={bgImg3} alt="" />
             <div className="AboutUs__carousel_mobile">
               <div className="AboutUs__carousel_mobilenav">
-                <div className="AboutUs__carousel_mobilenavtitle">
-                  Last view back
+
+                <div className="AboutUs__carousel_mobilenavtitle" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>
+                  <AnimationComponent
+                    transition={1.3}
+                    threshold={0.65}
+                    opacityAnimation={{ from: 0.01, to: 1 }}
+                  >
+                    <div >Last view back</div>
+                  </AnimationComponent>
                 </div>
+
+                <div className="AboutUs__carousel_mobilenavtitle" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>
+                  <AnimationComponent
+                    transition={1.3}
+                    threshold={0.65}
+                    opacityAnimation={{ from: 0.01, to: 1 }}
+                  >
+                    <div >On the skyline</div>
+                  </AnimationComponent>
+                </div>
+
+                <div className="AboutUs__carousel_mobilenavtitle" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>
+                  <AnimationComponent
+                    transition={1.3}
+                    threshold={0.65}
+                    opacityAnimation={{ from: 0.01, to: 1 }}
+                  >
+                    <div >Pityful a rethoric</div>
+                  </AnimationComponent>
+                </div>
+
+                <div className="AboutUs__carousel_mobilenavtitle" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>
+                  <AnimationComponent
+                    transition={1.3}
+                    threshold={0.65}
+                    opacityAnimation={{ from: 0.01, to: 1 }}
+                  >
+                    <div >On her way she</div>
+                  </AnimationComponent>
+                </div>
+
                 <div className="AboutUs__carousel_mobilenavbuttons">
-                  <div className="AboutUs__carousel_mobilenavbuttonsleft">
-                    <img src={arrowMobileIcon} alt="" />
-                  </div>
-                  <div className="AboutUs__carousel_mobilenavbuttonsright">
-                    <img src={arrowMobileIcon} alt="" />
-                  </div>
+                  <img
+                    className="AboutUs__carousel_mobilenavbuttonsleft"
+                    src={arrowMobileIcon}
+                    alt=""
+                    onClick={() => { if (counter > 1) { setcounter(counter => counter = counter - 1) } }}
+                  />
+                  <img
+                    className="AboutUs__carousel_mobilenavbuttonsright"
+                    src={arrowMobileIcon}
+                    alt=""
+                    onClick={() => { if (counter < 4) { setcounter(counter => counter = counter + 1) } }}
+                  />
                 </div>
               </div>
-              <div className="AboutUs__carousel_mobiletext">
-                She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+
+              <div className="AboutUs__carousel_mobiletext" style={{ display: `${counter == 1 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.8}
+                  threshold={0.65}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  <div>
+                    She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                  </div>
+                </AnimationComponent>
               </div>
+
+              <div className="AboutUs__carousel_mobiletext" style={{ display: `${counter == 2 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.8}
+                  threshold={0.65}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  <div>
+                    She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                  </div>
+                </AnimationComponent>
+              </div>
+
+              <div className="AboutUs__carousel_mobiletext" style={{ display: `${counter == 3 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.8}
+                  threshold={0.65}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  <div>
+                    She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                  </div>
+                </AnimationComponent>
+              </div>
+
+              <div className="AboutUs__carousel_mobiletext" style={{ display: `${counter == 4 ? 'block' : 'none'}` }}>
+                <AnimationComponent
+                  transition={1.8}
+                  threshold={0.65}
+                  opacityAnimation={{ from: 0.01, to: 1 }}
+                >
+                  <div>
+                    She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.
+                  </div>
+                </AnimationComponent>
+              </div>
+
             </div>
           </div>
         </AnimationComponent>
+
       </div>
     </div>
   )
