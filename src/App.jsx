@@ -19,7 +19,7 @@ const Recipes = lazy(() => import('./Components/Recipes/Recipes'))
 
 function App() {
 
-  const [menuisopened, setmenuisopened] = useState(true)
+  const [menuisopened, setmenuisopened] = useState(false)
   const closeMenu = () => setmenuisopened(false)
   const openMenu = () => setmenuisopened(true)
 
