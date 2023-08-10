@@ -5,12 +5,8 @@ function OpenedMenu({ menuisopened, closeMenu }) {
   return (
 
     <div className={`openedmenu ${menuisopened ? 'null' : "display-none"}`} id="openedmenu">
-      <div
-        className="openedmenu__button"
-        id="closemenubutton"
-        onClick={closeMenu}
-      >
-        <img className="openedmenu__buttonicon" src={CloseIcon} alt="" />
+      <div className="openedmenu__button" id="closemenubutton"              >
+        <img className="openedmenu__buttonicon" src={CloseIcon} alt="" onClick={closeMenu} />
       </div>
 
       <div className="openedmenulist">
