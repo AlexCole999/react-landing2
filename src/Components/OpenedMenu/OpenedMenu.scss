@@ -1,5 +1,6 @@
 .openedmenu {
   position: fixed;
+  transition: 1s all ease-out;
   z-index: 10000;
   right: 0px;
   background: linear-gradient(180deg, #000000 0%, rgba(51, 27, 7, 0.7) 100%);
@@ -67,5 +68,5 @@
 }
 
 .display-none {
-  display: none;
+  width: 0px;
 }

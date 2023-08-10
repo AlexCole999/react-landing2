@@ -10,7 +10,7 @@ function OpenedMenu({ menuisopened, closeMenu }) {
         id="closemenubutton"
         onClick={closeMenu}
       >
-        <div className="openedmenu__buttontext">Back</div><img className="openedmenu__buttonicon" src={CloseIcon} alt="" />
+        <img className="openedmenu__buttonicon" src={CloseIcon} alt="" />
       </div>
 
       <div className="openedmenulist">
