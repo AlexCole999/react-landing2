@@ -45,7 +45,10 @@
   &__rightside {}
 
   &__button {
+
     &burger {
+      cursor: pointer;
+
       @media screen and (min-width:1440px) {
         display: none;
       }

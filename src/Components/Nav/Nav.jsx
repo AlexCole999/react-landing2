@@ -4,9 +4,7 @@ import header from '../../assets/icons/header-burgerButton.svg'
 import AnimationComponent from '../AnimationComponent/AnimationComponent'
 import { useState } from 'react'
 
-function Nav() {
-
-  const [menuisopened, setmenuisopened] = useState(false)
+function Nav({ openMenu }) {
 
   return (
 
@@ -68,7 +66,15 @@ function Nav() {
             opacityAnimation={{ from: 0, to: 1 }}
             moveAnimation={{ right: { from: 25, to: 0 } }}
           >
-            <img id="menubutton" className="Nav__buttonburger" src={header} alt="" />
+
+            <img
+              id="menubutton"
+              className="Nav__buttonburger"
+              src={header}
+              alt=""
+              onClick={openMenu}
+            />
+
             <button className="Nav__buttoncontact">CONTACT</button>
           </AnimationComponent>
 
