@@ -1,0 +1,75 @@
+.App {
+  position: relative;
+}
+
+.openedmenu {
+  position: fixed;
+  z-index: 10000;
+  right: 0px;
+  background: linear-gradient(180deg, #000000 0%, rgba(51, 27, 7, 0.7) 100%);
+  width: 315px;
+  height: 100vh;
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 12px;
+    margin: 36px 25px 40px 0px;
+
+    &icon {
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+    }
+
+    &text {
+      text-align: center;
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 16px 24px;
+    width: 266px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &text {
+      padding-left: 24px;
+    }
+
+    &_selected {
+      background-color: #fff;
+      color: #010932;
+      font-weight: 600;
+    }
+
+  }
+
+}
+
+// .display-none {
+//   display: none;
+// }

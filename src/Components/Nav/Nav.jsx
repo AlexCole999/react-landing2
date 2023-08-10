@@ -2,10 +2,14 @@ import './Nav.scss'
 import Logo from '../../assets/icons/Logo.svg'
 import header from '../../assets/icons/header-burgerButton.svg'
 import AnimationComponent from '../AnimationComponent/AnimationComponent'
+import { useState } from 'react'
 
 function Nav() {
 
+  const [menuisopened, setmenuisopened] = useState(false)
+
   return (
+
     <div className='Nav'>
 
       <div className="Nav__container">
@@ -64,7 +68,7 @@ function Nav() {
             opacityAnimation={{ from: 0, to: 1 }}
             moveAnimation={{ right: { from: 25, to: 0 } }}
           >
-            <img className="Nav__buttonburger" src={header} alt="" />
+            <img id="menubutton" className="Nav__buttonburger" src={header} alt="" />
             <button className="Nav__buttoncontact">CONTACT</button>
           </AnimationComponent>
 
