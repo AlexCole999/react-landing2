@@ -8,7 +8,7 @@ import AnimationComponent from './../AnimationComponent/AnimationComponent';
 function Footer() {
 
   return (
-    <div className="Footer">
+    <div className="Footer" id="Footer">
 
       <div className="Footer__container">
 
@@ -23,8 +23,11 @@ function Footer() {
             opacityAnimation={{ from: 0, to: 1 }}
           >
             <div className="Footer__logo">
-              <img src={Logo} alt="" />
+              <a href="#FreshBakery">
+                <img src={Logo} alt="" />
+              </a>
             </div>
+
           </AnimationComponent>
 
           <AnimationComponent
@@ -37,10 +40,10 @@ function Footer() {
           >
             <div className="Footer__topcontentcolumn">
               <div className="Footer__title">Menu</div>
-              <div className="Footer__elem">About</div>
-              <div className="Footer__elem">Product</div>
-              <div className="Footer__elem">Recipes</div>
-              <div className="Footer__elem">Contact</div>
+              <a href="#AboutUs"><div className="Footer__elem">About</div></a>
+              <a href="#Products"><div className="Footer__elem">Product</div></a>
+              <a href="#Recipes"><div className="Footer__elem">Recipes</div></a>
+              <a href="#GetInTouch"><div className="Footer__elem">Contact</div></a>
             </div>
           </AnimationComponent>
 

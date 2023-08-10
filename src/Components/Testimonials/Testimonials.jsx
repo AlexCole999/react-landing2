@@ -34,7 +34,7 @@ function Testimonials() {
   let mouseButtonPressedCoordinates;
 
   return (
-    <div className="Testimonials">
+    <div className="Testimonials" id="Testimonials">
 
       <div className="Testimonials__container">
 

@@ -58,6 +58,7 @@
   }
 
   &__elem {
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -69,6 +70,10 @@
   &__icons {
     display: flex;
     gap: 8px;
+
+    &item {
+      cursor: pointer;
+    }
   }
 
   &__divider {

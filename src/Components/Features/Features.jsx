@@ -9,7 +9,7 @@ function Features() {
 
   return (
 
-    <div className="Features">
+    <div className="Features" id="Features">
 
       <div className="Features__container">
 

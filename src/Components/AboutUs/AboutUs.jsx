@@ -12,7 +12,7 @@ function AboutUs() {
   const [counter, setcounter] = useState(1)
 
   return (
-    <div className="AboutUs">
+    <div className="AboutUs" id="AboutUs">
       <div className="AboutUs__container">
         <div className="AboutUs__sideleft">
           <AnimationComponent

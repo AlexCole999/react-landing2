@@ -13,7 +13,7 @@ function Baker() {
   const [counter, setcounter] = useState(1)
 
   return (
-    <div className="Baker">
+    <div className="Baker" id="Baker">
       <div className="Baker__container">
         <div className="Baker__sideleft">
           <AnimationComponent

@@ -9,7 +9,7 @@ function FreshBakery() {
 
   return (
 
-    <div className="FreshBakery">
+    <div className="FreshBakery" id="FreshBakery">
 
       <AnimationComponent
         className={"FreshBakery__bgimg1"}

@@ -18,7 +18,7 @@ function Nav() {
             opacityAnimation={{ from: 0, to: 1 }}
             moveAnimation={{ left: { from: 25, to: 0 } }}
           >
-            <img className='Nav__logo' src={Logo} alt="" />
+            <a href="#FreshBakery"><img className='Nav__logo' src={Logo} alt="" /></a>
           </AnimationComponent>
 
           <div className="Nav__menu">
@@ -29,7 +29,7 @@ function Nav() {
               triggerOnce={true}
               opacityAnimation={{ from: 0, to: 1 }}
             >
-              <div className="Nav__menuelem">About</div>
+              <a href="#AboutUs"><div className="Nav__menuelem">About</div></a>
             </AnimationComponent>
 
             <AnimationComponent
@@ -39,7 +39,7 @@ function Nav() {
               triggerOnce={true}
               opacityAnimation={{ from: 0, to: 1 }}
             >
-              <div className="Nav__menuelem">Products</div>
+              <a href="#Products"><div className="Nav__menuelem">Products</div></a>
             </AnimationComponent>
 
             <AnimationComponent
@@ -49,7 +49,7 @@ function Nav() {
               triggerOnce={true}
               opacityAnimation={{ from: 0, to: 1 }}
             >
-              <div className="Nav__menuelem">Recipes</div>
+              <a href="#Recipes"><div className="Nav__menuelem">Recipes</div></a>
             </AnimationComponent>
 
           </div>

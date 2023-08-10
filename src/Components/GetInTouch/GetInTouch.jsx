@@ -24,7 +24,7 @@ function ContactElem({ icon, counter, title, text }) {
 function GetInTouch() {
 
   return (
-    <div className="GetInTouch">
+    <div className="GetInTouch" id="GetInTouch">
 
       <div className="GetInTouch__container">
 

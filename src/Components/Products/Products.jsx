@@ -103,7 +103,7 @@ function CardSmall({ img2, type, title, price }) {
 function Products() {
 
   return (
-    <div className="Products">
+    <div className="Products" id="Products">
 
       <div className="Products__container">
 

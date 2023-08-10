@@ -111,7 +111,7 @@ function CardSmall({ img2, type, title, time }) {
 function Recipes() {
 
   return (
-    <div className="Recipes">
+    <div className="Recipes" id="Recipes">
 
       <div className="Recipes__container">
 
